@@ -1,9 +1,4 @@
-# The Scottylabs.org website.
-<br>
-<img width="419" alt="Screen Shot 2020-01-08 at 4 32 34 PM" src="https://user-images.githubusercontent.com/56605721/72017908-aa980880-3234-11ea-9641-af8887c3b929.png">
-<br>
-
-This is the main website of Scotty Labs. We're
+This is the 2020-2021 Tartanhacks website (under development). We're
 using Jekyll on GitHub Pages.
 
 
