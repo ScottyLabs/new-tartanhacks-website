@@ -4,33 +4,7 @@ using Jekyll on GitHub Pages.
 
 ## Installation
 
-Make sure you have a recent version of Ruby installed and run
-
-```console
-$ gem install bundler
-$ bundle install
-```
-
-If that failed, and you're on OS X, you might have to run this:
-
-```
-gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/libxml2 --use-system-libraries
-```
-
-and then re-run `bundle install`.
-
-Once you've done that, you can preview the site locally by running
-
-```console
-$ jekyll serve
-```
-If the above doesn't work, try running
-```console
-$ bundle exec jekyll serve
-```
-
-This will compile the static files, including all Sass assets. Then, in your
-browser, navigate to <http://localhost:4000/> to view the generated site.
+For information about setting up the project locally, check out <a href="https://docs.google.com/document/d/1N3wfRB0y__8qYLljmlGhZXq8ICHm75l-QYAJ-32aM0c/edit?usp=sharing">this</a> document!
 
 
 ## I want to...
