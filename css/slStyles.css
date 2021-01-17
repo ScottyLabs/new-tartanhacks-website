@@ -374,22 +374,22 @@ section#about .text-muted {
     color: #fff;
 }
 
-#apis .portfolio-item {
+#schedule .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
-#events .events-item {
+#register .events-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#apis .portfolio-item .portfolio-link {
+#schedule .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
-#events .events-item .events-link {
+#register .events-item .events-link {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -401,7 +401,7 @@ section#about .text-muted {
 
 
 
-#apis .portfolio-item .portfolio-link .portfolio-hover {
+#schedule .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -411,7 +411,7 @@ section#about .text-muted {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
-#events .events-item .events-link .events-hover {
+#register .events-item .events-link .events-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -425,14 +425,14 @@ section#about .text-muted {
 
 
 
-#apis .portfolio-item .portfolio-link .portfolio-hover:hover {
+#schedule .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
 }
-#events .events-item .events-link .events-hover:hover {
+#register .events-item .events-link .events-hover:hover {
     opacity: 1;
 }
 
-#apis .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#schedule .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -442,7 +442,7 @@ section#about .text-muted {
     font-size: 20px;
     color: #fff;
 }
-#events .events-item .events-link .events-hover .events-hover-content {
+#register .events-item .events-link .events-hover .events-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -464,23 +464,23 @@ section#about .text-muted {
 
 
 
-#apis .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#schedule .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
 }
-#events .events-item .events-link .events-hover .events-hover-content i {
+#register .events-item .events-link .events-hover .events-hover-content i {
     margin-top: -12px;
 }
 
 
 
 
-#apis .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#apis .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#schedule .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#schedule .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
     margin: 0;
 }
 
-#events .events-item .events-link .events-hover .events-hover-content h3,
-#events .events-item .events-link .events-hover .events-hover-content h4 {
+#register .events-item .events-link .events-hover .events-hover-content h3,
+#register .events-item .events-link .events-hover .events-hover-content h4 {
     margin: 0;
 }
 
@@ -489,14 +489,14 @@ section#about .text-muted {
 
 
 
-#apis .portfolio-item .portfolio-caption {
+#schedule .portfolio-item .portfolio-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
     text-align: center;
     background-color: #fff;
 }
-#events .events-item .events-caption {
+#register .events-item .events-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -512,7 +512,7 @@ section#about .text-muted {
     margin: 0;
     text-transform: none;
 }
-#events .events-item .events-caption h4 {
+#register .events-item .events-caption h4 {
     margin: 0;
     text-transform: none;
 }
@@ -522,7 +522,7 @@ section#about .text-muted {
     font-size: 16px;
     font-style: italic;
 }
-#events .events-item .events-caption p {
+#register .events-item .events-caption p {
     margin: 0;
     font-size: 16px;
     font-style: italic;
@@ -536,7 +536,7 @@ section#about .text-muted {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
-    #events .events-item {
+    #register .events-item {
         margin: 0 0 30px;
     }
 }
@@ -777,24 +777,24 @@ section {
     overflow: hidden;
 }
 
-section#calendar,
-section#contact {
+section#contact,
+section#faq {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #212A36;
 }
 
-section#calendar .section-heading,
-section#calendar h3,
-section#calendar p,
-section#calendar a,
 section#contact .section-heading,
+section#contact h3,
 section#contact p,
-section#contact a {
+section#contact a,
+section#faq .section-heading,
+section#faq p,
+section#faq a {
     color: #fff;
 }
 
-section#contact a:hover,
+section#faq a:hover,
 a:focus,
 a:active,
 a.active {
