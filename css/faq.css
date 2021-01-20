@@ -1,0 +1,24 @@
+.expandable{
+    background-color:#2EA0B1;
+    color:white;
+    padding:16px;
+    font-size: 20px;
+    width:100%;
+    text-align:left;
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
+.active, .expandable:hover{
+    background-color:#3f3f3f;
+}
+
+.text_answer{
+    background-color: #212A36;
+    padding: 0 18px;
+    padding-top: 5px;
+    overflow:hidden;
+    display:none;
+    
+}

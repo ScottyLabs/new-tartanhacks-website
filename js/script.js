@@ -35,3 +35,18 @@ $(function () {
         $(element).append(img);
     });
 });
+
+// Adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
+var elem = document.getElementsByClassName("expandable");
+var i;
+for (i = 0; i < elem.length; i++) {
+    elem[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var text_answer = this.nextElementSibling;
+      if (text_answer.style.display === "block") {
+        text_answer.style.display = "none";
+      } else {
+        text_answer.style.display = "block";
+      }
+    });
+  }
