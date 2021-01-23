@@ -1,0 +1,47 @@
+/*.awards-container{
+    position:relative;
+}
+
+.awards-block-1{ /*this is actually the shape ... rounded rect
+    position:absolute; 
+    border-radius: 25px;
+    background: pink;
+    padding: 20px; 
+    /*width: 25%;
+    height: 25%;
+}*/
+
+.awards-container{
+    display:flex;
+    /*justify-content:center;*/
+    justify-content: center;
+    
+}
+
+.awards-grid{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.awards-item-1{
+    border-radius: 25px; /*25*/
+    background: pink;
+    padding: 50px; /*20 -- making it larger makes less elems per row*/
+    margin-left: 45px; /*10*/
+    margin-top:10px;
+    box-shadow: 0px 0px 15px 0px #e4e4e4;
+    transition: all 0.5s;
+    /*filter: alpha(opacity=60);*/
+}
+
+@media screen and (max-width: 500px) {
+    .awards-item-1{
+        margin-left:10px;
+    }
+}
+
+.awards-item-1:hover{
+    transform: scale(1.05);
+}
