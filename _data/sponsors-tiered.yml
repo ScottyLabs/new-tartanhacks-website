@@ -71,6 +71,6 @@
   - name: Repl.it
     image: repl_it.png
     url: https://repl.it/
-  - name: Ritual Energy
-    image: ritual_energy.png
-    url: https://www.ritualenergy.com/
+  #- name: Ritual Energy
+  #  image: ritual_energy.png
+  #  url: https://www.ritualenergy.com/

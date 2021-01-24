@@ -33,6 +33,7 @@
     <link href="css/slStyles.css" rel="stylesheet">
     <link href="css/faq.css" rel="stylesheet">
     <link href="css/awards.css" rel="stylesheet">
+    <link href="css/sponsors.css" rel="stylesheet">
 
     <!-- ScottyLabs Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -480,12 +481,30 @@
     <section id="sponsors">
         <div class="container">
             <!-- Core Members -->
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Sponsors</h2>
                     <h3 class="section-subheading text-muted">Our Amazing Team</h3>
                 </div>
-            </div>
+            </div>-->
+
+            <h2 class="section-heading">Sponsors</h2>
+            <div id="sponsorss" class="clearfix">
+                    <div id="sponsors-box">
+                      {% for tier in site.data.sponsors-tiered %}
+                        <h4>{{ tier.tier }}</h4>
+                        <div class="tier">
+                          {% for sponsor in tier.sponsors %}
+                              <a class="{{ tier.class }} link" href="{{ sponsor.url }}">
+                                <img class="company-logo" src="img/sponsors/{{ sponsor.image }}"></img>
+                              </a>
+                          {% endfor %}
+                        </div>
+                      {% endfor %}
+                    </div>
+            </div>            
+
+            <!--
             <div class="row">
                 {% for member in site.data.team %}
                     <div class="col-sm-4">
@@ -507,6 +526,7 @@
                     </div>
                  {% endfor %}
             </div>
+            -->
         </div>
     </section>
 

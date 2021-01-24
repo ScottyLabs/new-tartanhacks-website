@@ -1,0 +1,129 @@
+section#sponsors{
+    /*background-color:green;*/
+    overflow:scroll;
+    /*max-height:100%;*/
+}
+#sponsors-box {
+    /* background-color: #FFFFFF; */
+    /*background-color:blue;*/
+    position: relative;
+    max-width: 75vw;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-bottom: 10vh;
+    margin-top: -10px;
+}
+
+#sponsors-box h2 {
+    color: pink;
+}
+
+#sponsorss {
+    height: 85vh;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    #sponsors-box {
+        max-width: 68vw;
+    }
+
+}
+
+@media (max-width: 850px) {
+    #sponsors-box {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        max-width: initial;
+    }
+}
+
+.tier {
+    /*flex-wrap: wrap;
+    display: flex;*/
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.link {
+    text-align: center;
+    /* position: relative; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-flex: 1;
+    display: flex;
+    flex: 1 1 0;
+    width: 80%;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+    min-width: 100pt;
+}
+
+.company-logo {
+    text-align: center;
+    /* position: relative; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-flex: 1;
+    display: flex;
+    flex: 1 1 0;
+    width: 80%; /*80%*/
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5px; /*20*/
+    min-width: 100pt;
+    opacity: 1;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    align-self: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+
+    max-width:50%;
+}
+
+.company-logo:hover {
+    opacity: .7;
+}
+
+.diamond {
+    max-width: 20%; /*60 .. 40*/
+}
+
+.gold {
+    max-width: 15%; /*50 .. 30*/
+}
+
+.silver {
+    max-width: 10% /*40 .. 20*/
+}
+
+.bronze {
+    max-width: 5%; /*20 .. 10*/
+}
+
+.kind {
+    max-width: 5%; /*10*/
+}
+
+h2 {
+    padding-top: 3em;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
