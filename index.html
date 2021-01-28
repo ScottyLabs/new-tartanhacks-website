@@ -34,6 +34,7 @@
     <link href="css/faq.css" rel="stylesheet">
     <link href="css/awards.css" rel="stylesheet">
     <link href="css/sponsors.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
 
     <!-- ScottyLabs Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -43,8 +44,8 @@
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
-      "@type": "Organization",
-      "description": "ScottyLabs is a student-run, interdisciplinary organization at Carnegie Mellon University dedicated to removing barriers between students’ ideas and their implementation.",
+      "@type": "Event",
+      "description": "Carnegie Mellon University's largest hackathon, hosted by ScottyLabs. Come hack, build, make or create your own project. Sponsored by Emirates, Microsoft, BNY Mellon, and Facebook.",
       "foundingDate": "2011",
       "event": {
           "@type": "Event",
@@ -52,11 +53,11 @@
       },
       "image": "https://scottylabs.org/img/shareable-brand.png",
       "logo": "https://scottylabs.org/img/shareable-brand.png",
-      "name": "ScottyLabs",
+      "name": "TartanHacks",
       "alternateName": "Scotty Labs",
-      "parentOrganization": {
-        "@type": "CollegeOrUniversity",
-        "sameAs": "http://www.cmu.edu"
+      "organizer": {
+        "@type": "Organization",
+        "sameAs": "https://scottylabs.org"
       },
       "sameAs": "https://www.facebook.com/ScottyLabs/",
       "url": "https://scottylabs.org"
@@ -94,7 +95,7 @@
                     <li class="hidden"><a href="#page-top"></a></li>
                     <!-- Make Home be the main page-->
                     <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#register">Register</a></li>
+                    <li><a class="page-scroll" href="#register">Awards</a></li>
                     <li><a class="page-scroll" href="#schedule">Schedule</a></li>
                     <li><a class="page-scroll" href="#faq">FAQ</a></li>
                     <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
@@ -120,22 +121,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="section-heading text-center">About
-                    </h2>
-                    <p class="text-muted col-md-6 col-md-offset-3">
-                    Tartanhacks is the largest hackathon at CMU! Organized by <a href="https://scottylabs.org/wdw">Scotty Labs</a>, it's a hackathon where, in 24 hours, participants from all over the country work in groups to create innovative projects.
-                    This year, Tartanhacks will be held in person, so come on over to hack, learn new concepts through our virtual
-                    workshops, and meet other hackers!</p>
+                    <div class="outer-th-video"> 
+                            <iframe class="th-video" width="420" height="345" src="https://www.youtube.com/embed/PQYfXmqJdIA"></iframe>
+                     </div>
+                    
+                     <div class="outer-th-video-para">
+                        <div class="th-video-para">
+                            <h2 class="th-video-text" style="color:white">ABOUT</h2>
+                            <p class="th-video-text">
+                                    Tartanhacks is the largest hackathon at CMU! Organized by <a href="https://scottylabs.org/" style="text-decoration:none;color:white" target="_blank">ScottyLabs</a>, it's a hackathon where, in 24 hours, participants from all over the country work in groups to create innovative projects.
+                                    This year, Tartanhacks will be held in person, so come on over to hack, learn new concepts through our virtual
+                                    workshops, and meet other hackers!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Events Section <div class="col-lg-12">-->
+    <!-- Events Section-->
     <section id="register">
         <div class="container">
-            <!--<div class="row">
-                <div class="row align-items-start">-->
             <div class="row">
                 <div class="col-sm-offset-3 col-sm-6  text-center">
                     <h2 class="section-heading">Awards</h2>
@@ -147,89 +153,36 @@
             <div class="awards-container">
                 <div class="awards-grid">
                     <div class="awards-item-1">
-                        <h4>Healthcare</h4>
+                        <h4>Award 1</h4>
                         <p>Hi this is the description.</p>
                     </div>
 
                     <div class="awards-item-1">
-                        <h4>Art</h4>
+                        <h4>Award 2</h4>
                         <p>Hi this is the description.</p>
                     </div>
 
                     <div class="awards-item-1">
-                        <h4>Cooking</h4>
+                        <h4>Award 3</h4>
                         <p>Hi this is the description.</p>
                     </div>
 
                     <div class="awards-item-1">
-                        <h4>Drawing</h4>
+                        <h4>Award 4</h4>
                         <p>Hi this is the description.</p>
                     </div>
 
                     <div class="awards-item-1">
-                        <h4>Running</h4>
+                        <h4>Award 5</h4>
                         <p>Hi this is the description.</p>
                     </div>
 
                     <div class="awards-item-1">
-                            <h4>Swimming</h4>
-                            <p>Hi this is the description.</p>
+                        <h4>Award 6</h4>
+                        <p>Hi this is the description.</p>
                     </div>
                 </div>
             </div>
-            
-            <!-- SDFSDFSDF -- BEGIN -- SDFSDFSDF 
-            <div class="row">
-                <--WDW**--
-                <div class="col-sm-6 events-item">
-                    <a href="https://scottylabs.org/wdw" class="events-link" data-toggle="modal">
-                        <div class="events-hover">
-                            <div class="events-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/events/wdw.png" class="img-responsive" alt="Tartan Hacks">
-                    </a>
-                    <div class="events-caption">
-                        <h4>WebDevWeekend</h4>
-                        <p class="text-muted">A weekend of web dev workshops</p>
-                    </div>
-                </div>
-
-                <--TARTANHACKS**--
-                <div class="col-sm-6 events-item">
-                    <a href="https://tartanhacks.com/" class="events-link" data-toggle="modal">
-                        <div class="events-hover">
-                            <div class="events-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/events/TartanHacks2017WhiteOnBlack.svg" class="img-responsive" alt="Tartan Hacks">
-                    </a>
-                    <div class="events-caption">
-                        <h4>TartanHacks</h4>
-                        <p class="text-muted">CMU's Largest Hackathon</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <--CRASHCOURSE**--
-                <div class="col-sm-offset-3 events-item">
-                    <a href="https://scottylabs.org/crashcourse" class="events-link" data-toggle="modal">
-                        <div class="events-hover">
-                            <div class="events-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/events/crashCourse.png" class="img-responsive" alt="Crash Course">
-                    </a>
-                    <div class="events-caption">
-                        <h4>CrashCourse</h4>
-                        <p class="text-muted">Workshops to teach hackers new skills before TartanHacks</p>
-                    </div>
-                </div>
-            </div>
-            <-- SDFSDFSDF - END - SDFSDFSDF -->
         </div>
     </section>
 
@@ -239,7 +192,7 @@
             <div class="row">
                 <div class="col-sm-offset-3 col-sm-6 text-center">
                     <h2 class="section-heading">Schedule</h2>
-                    <h3 class="section-subheading text-muted">Our APIs are (unofficial) access points for CMU data. Their purpose is to make it as easy as possible to make tools and applications that benefit the Carnegie Mellon community.</h3>
+                    <!--<h3 class="section-subheading text-muted">Our APIs are (unofficial) access points for CMU data. Their purpose is to make it as easy as possible to make tools and applications that benefit the Carnegie Mellon community.</h3>-->
                 </div>
             </div>
             <div class="row">
