@@ -2,7 +2,7 @@
     position:relative;
 }
 
-.awards-block-1{ /*this is actually the shape ... rounded rect
+.awards-block-1{ /*this is the shape: rounded rect
     position:absolute; 
     border-radius: 25px;
     background: pink;
@@ -27,7 +27,7 @@
 
 .awards-item-1{
     border-radius: 25px; /*25*/
-    background: rgb(192, 231, 255);
+    background: #2EA0B1;
     padding: 50px; /*20 -- making it larger makes less elems per row*/
     margin-left: 45px; /*10*/
     margin-top:10px;

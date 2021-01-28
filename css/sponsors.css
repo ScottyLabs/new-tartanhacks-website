@@ -78,11 +78,11 @@ section#sponsors{
     -webkit-box-flex: 1;
     display: flex;
     flex: 1 1 0;
-    width: 80%; /*80%*/
+    width: 80%;
     margin: 0 auto;
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 5px; /*20*/
+    margin-top: 5px;
     min-width: 100pt;
     opacity: 1;
     -webkit-transition: opacity .2s ease-in-out;
@@ -100,23 +100,23 @@ section#sponsors{
 }
 
 .diamond {
-    max-width: 20%; /*60 .. 40*/
+    max-width: 20%;
 }
 
 .gold {
-    max-width: 15%; /*50 .. 30*/
+    max-width: 15%;
 }
 
 .silver {
-    max-width: 10% /*40 .. 20*/
+    max-width: 10%;
 }
 
 .bronze {
-    max-width: 5%; /*20 .. 10*/
+    max-width: 5%;
 }
 
 .kind {
-    max-width: 5%; /*10*/
+    max-width: 5%;
 }
 
 h2 {
