@@ -31,6 +31,10 @@
 
     <!-- My CSS -->
     <link href="css/slStyles.css" rel="stylesheet">
+    <link href="css/faq.css" rel="stylesheet">
+    <link href="css/awards.css" rel="stylesheet">
+    <link href="css/sponsors.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
 
     <!-- ScottyLabs Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -40,8 +44,8 @@
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
-      "@type": "Organization",
-      "description": "ScottyLabs is a student-run, interdisciplinary organization at Carnegie Mellon University dedicated to removing barriers between students’ ideas and their implementation.",
+      "@type": "Event",
+      "description": "Carnegie Mellon University's largest hackathon, hosted by ScottyLabs. Come hack, build, make or create your own project. Sponsored by Emirates, Microsoft, BNY Mellon, and Facebook.",
       "foundingDate": "2011",
       "event": {
           "@type": "Event",
@@ -49,11 +53,11 @@
       },
       "image": "https://scottylabs.org/img/shareable-brand.png",
       "logo": "https://scottylabs.org/img/shareable-brand.png",
-      "name": "ScottyLabs",
+      "name": "TartanHacks",
       "alternateName": "Scotty Labs",
-      "parentOrganization": {
-        "@type": "CollegeOrUniversity",
-        "sameAs": "http://www.cmu.edu"
+      "organizer": {
+        "@type": "Organization",
+        "sameAs": "https://scottylabs.org"
       },
       "sameAs": "https://www.facebook.com/ScottyLabs/",
       "url": "https://scottylabs.org"
@@ -89,12 +93,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden"><a href="#page-top"></a></li>
+                    <!-- Make Home be the main page-->
                     <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#events">Events</a></li>
-                    <li><a class="page-scroll" href="#apis">APIs</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
-                    <li><a class="page-scroll" href="#team">Members</a></li>
-                    <li><a class="page-scroll" href="#calendar">Calendar</a></li>
+                    <li><a class="page-scroll" href="#register">Challenges</a></li>
+                    <li><a class="page-scroll" href="#schedule">Schedule</a></li>
+                    <li><a class="page-scroll" href="#faq">FAQ</a></li>
+                    <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
+                    <!--<li><a class="page-scroll" href="#contact">Contact</a></li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -111,232 +116,235 @@
         </div>
     </header>
 
-    <!-- Services Section -->
+
+    <!-- ABOUT Section -->
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="section-heading text-center">About
-                    </h2>
-                    <p class="text-muted col-md-6 col-md-offset-3">
-                    ScottyLabs is a club devoted to helping students learn about and explore interesting topics in technology. We organize educational events to help people learn how to make things, host workshops to give students the opportunity to work on projects outside of class, and develop applications and services for the campus community.</p>
+                    <div class="outer-th-video"> 
+                            <iframe class="th-video" width="420" height="345" src="https://www.youtube.com/embed/PQYfXmqJdIA"></iframe>
+                     </div>
+                    
+                     <div class="outer-th-video-para">
+                        <div class="th-video-para">
+                            <h2 class="th-video-text" style="color:white">ABOUT</h2>
+                            <p class="th-video-text">
+                                    Tartanhacks is the largest hackathon at CMU! Organized by <a href="https://scottylabs.org/" style="text-decoration:none;color:white" target="_blank">ScottyLabs</a>, it's a hackathon where, in 24 hours, participants from all over the country work in groups to create innovative projects.
+                                    This year, Tartanhacks will be held in person, so come on over to hack, learn new concepts through our virtual
+                                    workshops, and meet other hackers!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Events Section -->
-    <section id="events">
+
+    <!-- CHALLENGES Section-->
+    <section id="register">
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-3 col-sm-6  text-center">
-                    <h2 class="section-heading">Events</h2>
+                    <h2 class="section-heading">Challenges</h2>
                     <h3 class="section-subheading text-muted">Our workshops, Web Dev Weekend and Crash Course, allow curious students to learn new skills. Our annual hackathon, TartanHacks, provides a collaborative environment for students to apply their skills by creating original projects.</h3>
                 </div>
             </div>
-            <div class="row">
-                <!--WDW-->
-                <div class="col-sm-6 events-item">
-                    <a href="https://scottylabs.org/wdw" class="events-link" data-toggle="modal">
-                        <div class="events-hover">
-                            <div class="events-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/events/wdw.png" class="img-responsive" alt="Tartan Hacks">
-                    </a>
-                    <div class="events-caption">
-                        <h4>WebDevWeekend</h4>
-                        <p class="text-muted">A weekend of web dev workshops</p>
-                    </div>
-                </div>
+        
 
-                <!--TARTANHACKS-->
-                <div class="col-sm-6 events-item">
-                    <a href="https://tartanhacks.com/" class="events-link" data-toggle="modal">
-                        <div class="events-hover">
-                            <div class="events-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/events/TartanHacks2017WhiteOnBlack.svg" class="img-responsive" alt="Tartan Hacks">
-                    </a>
-                    <div class="events-caption">
-                        <h4>TartanHacks</h4>
-                        <p class="text-muted">CMU's Largest Hackathon</p>
+            <div class="awards-container">
+                <div class="awards-grid">
+                    <div class="awards-item-1">
+                        <h4>Award 1</h4>
+                        <p>Hi this is the description.</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <!--CRASHCOURSE-->
-                <div class="col-sm-offset-3 events-item">
-                    <a href="https://scottylabs.org/crashcourse" class="events-link" data-toggle="modal">
-                        <div class="events-hover">
-                            <div class="events-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/events/crashCourse.png" class="img-responsive" alt="Crash Course">
-                    </a>
-                    <div class="events-caption">
-                        <h4>CrashCourse</h4>
-                        <p class="text-muted">Workshops to teach hackers new skills before TartanHacks</p>
+
+                    <div class="awards-item-1">
+                        <h4>Award 2</h4>
+                        <p>Hi this is the description.</p>
+                    </div>
+
+                    <div class="awards-item-1">
+                        <h4>Award 3</h4>
+                        <p>Hi this is the description.</p>
+                    </div>
+
+                    <div class="awards-item-1">
+                        <h4>Award 4</h4>
+                        <p>Hi this is the description.</p>
+                    </div>
+
+                    <div class="awards-item-1">
+                        <h4>Award 5</h4>
+                        <p>Hi this is the description.</p>
+                    </div>
+
+                    <div class="awards-item-1">
+                        <h4>Award 6</h4>
+                        <p>Hi this is the description.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- API Grid Section -->
-    <section id="apis" class="bg-light-gray">
+
+    <!-- SCHEDULE Section -->
+    <section id="schedule" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-3 col-sm-6 text-center">
-                    <h2 class="section-heading">APIs</h2>
-                    <h3 class="section-subheading text-muted">Our APIs are (unofficial) access points for CMU data. Their purpose is to make it as easy as possible to make tools and applications that benefit the Carnegie Mellon community.</h3>
+                    <h2 class="section-heading">Schedule</h2>
+                    <h3 class="section-subheading text-muted">Coming Soon!</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 portfolio-item">
-                    <a href="https://scottylabs.org/course-api/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/course-api.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Course API</h4>
-                        <p class="text-muted">Information about CMU current courses.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 portfolio-item">
-                    <a href="https://scottylabs.org/directory-api/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/directory-api.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Directory API</h4>
-                        <p class="text-muted">Directory information about CMU students.</p>
-                    </div>
-                </div>
-            </div>
-          <div class="row">
-                <div class="col-sm-6 portfolio-item">
-                    <a href="https://scottylabs.org/dining-api/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dining-api.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dining API</h4>
-                        <p class="text-muted">Information about CMU on-campus dining locations.</p>
-                    </div>
-                </div>
-
-                <!-- hid link to print @ scottylabs -->
-
-                <div class="col-sm-6 portfolio-item">
-                    <a href="https://scottylabs.org/print-api/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/print.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Print @ CMU</h4>
-                        <p class="text-muted">Connect to CMU printers from your own applications.</p>
-                    </div>
-                </div>
-            </div>
+            
 
         </div>
     </section>
 
-    <section id="contact">
+
+    <!-- FAQ Section -->
+    <section id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading text-center">Contact Us</h2>
+                    <h2 class="section-heading text-center">FAQ</h2>
                     <br>
-                    <div class="row col-md-8 col-md-offset-2">
-                        <div class="col-md-6 text-center">
-                            <span class="fa-stack fa-3x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-comment fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="service-heading text-center">Meetings</h4>
-                            <p class="text-muted">Our general body meetings are
-                            on Thursdays at 4:30pm.  Come say hi and get involved!
-                            For exact times and locations, check out our <a
-                              href="#calendar">calendar</a> below.</p>
-
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <span class="fa-stack fa-3x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-info fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="service-heading text-center">More</h4>
-                            <p class="text-muted">To learn more about our
-                            organization, and about how you can get involved, email hello@<span class="displaynone">X</span>scottylabs.org. You can also find us on <a href="https://www.facebook.com/ScottyLabs">Facebook</a> and <a href="https://github.com/scottylabs">GitHub</a>.</p>
-                        </div>
+                    <button type="button" class="expandable">How much does it cost to participate in TartanHacks?</button>
+                    <div class="text_answer">
+                        <p>Nothing. TartanHacks is free for all undergraduate students!</p>
+                    </div>
+                    <button type="button" class="expandable">I'm not a CS major, can I still join?</button>
+                    <div class="text_answer">
+                        <p>Yes! All undergradauate majors and programs, even if they aren't technical, are welcome 
+                            at TartanHacks. We have slides from a series of web development workshops online that 
+                            you can use to brush up your skills! We'll also have some workshops during the event so you 
+                            can get started with new frameworks.</p>
+                    </div>
+                    <button type="button" class="expandable">Is TartanHacks open to first-year students? </button>
+                    <div class="text_answer">
+                        <p>Yes! We welcome students of all skill levels to participate. First-year students and 
+                            first-time hackers have always been part of TartanHacks; we would love to see you at the 
+                            event! Some prizes will also be specific for beginner hackers.
+                            </p>
+                    </div>
+                    <button type="button" class="expandable">I'm a graduate student. Can I still participate? </button>
+                    <div class="text_answer">
+                        <p>Unfortunately, graduate students cannot participate. TartanHacks is currently limited to 
+                            undergraduate students only.
+                            </p>
+                    </div>
+                    <button type="button" class="expandable">Are non-CMU students allowed to attend?</button>
+                    <div class="text_answer">
+                        <p>Yes! However, we are unable to offer travel reimbusement, so you will have to provide for 
+                            your own transportation. Anyone with an educational email address can sign up on the 
+                            registration system.
+                            </p>
+                    </div>
+                    <button type="button" class="expandable">Can I register with a team?</button>
+                    <div class="text_answer">
+                        <p>You have to sign up as an individual for the event, and we'll have you specify your team 
+                            later on. Don't worry, if you already have a team chosen you'll still be able to work with 
+                            them during event.
+                            </p>
+                    </div>
+                    <button type="button" class="expandable">If I don't have a team before the event, can I still participate?</button>
+                    <div class="text_answer">
+                        <p>
+                                Absolutely! We'll have a team mixer after the opening ceremony to help you meet new hackers.
+                        </p>
+                    </div>
+                    <button type="button" class="expandable">How many people can we have per team?</button>
+                    <div class="text_answer">
+                        <p>
+                                Up to 4 people are allowed.
+                        </p>
+                    </div>
+                    <button type="button" class="expandable">I'm confused about my registration status. How does the 
+                        registration process work?</button>
+                    <div class="text_answer">
+                        <p>There are 3 states you can be in. <br>
+                            1. <strong>Submitted.</strong> You have submitted your application, but we haven't accepted you yet. 
+                            Don't worry though; we are doing acceptances in waves, i.e. one wave each day, up until 
+                            early Friday morning. <br>
+                            2. <strong>Admitted.</strong> We have accepted your TartanHacks application! The final step is to 
+                                click 'Confirm Your Spot' and fill out the form. <br>
+                            3. <strong>Confirmed.</strong> All you need to do is show up on Friday at 4PM for check in! Your 
+                            spot in TartanHacks is confirmed.
+                        </p>
+                    </div>
+                    <button type="button" class="expandable">Does everyone who registers get to participate at TartanHacks?</button>
+                    <div class="text_answer">
+                        <p>
+                                We expect that everyone who registers can get in. However, sometimes more hackers sign up than we can admit. Once registration closes, hackers are accepted on a rolling basis. You will be notified via email about your registration status.
+                        </p>
+                    </div>
+                    <button type="button" class="expandable">I got in, but a few of my team members were put on the waitlist. Will they be able to participate?
+                        </button>
+                    <div class="text_answer">
+                        <p>
+                                Hackers are accepted individually, so we are unable to guarantee that all members of your team will get in. However, if they're on the waitlist, there's still hope! See the next question.
+                        </p>
+                    </div>
+                    <button type="button" class="expandable">Is there a way to get off of the waitlist?</button>
+                    <div class="text_answer">
+                        <p>
+                                We will be letting hackers off the waitlist on a first-come, first-serve basis on the day of the event. Historically, many people have gotten off the waitlist.
+                        </p>
+                    </div>
+                    <button type="button" class="expandable">Are we limited to software projects or are hardware hacks allowed?</button>
+                    <div class="text_answer">
+                        <p>
+                                Hardware hacks are certainly allowed! We don't restrict projects to software, though you will need to bring your own hardware/materials.
+                        </p>
+                    </div>
+                    <button type="button" class="expandable">What if I need help during the hackathon?</button>
+                    <div class="text_answer">
+                        <p>
+                                We will have a team of student and corporate mentors on hand who are experts in many common technologies. They'll be able to answer your questions, help you debug, and get you set up with new frameworks. They can't make your project for you, but they are always there to help!
+                        </p>
+                    </div>
+                    <button type="button" class="expandable">Who runs TartanHacks?</button>
+                    <div class="text_answer">
+                        <p>
+                                TartanHacks is run by <a href="https://scottylabs.org/" style="text-decoration:none" target="_blank">ScottyLabs</a>, a student organization at Carnegie Mellon University that develops apps for CMU and runs educational events, like TartanHacks. ScottyLabs isn't affiliated with any academic department, and all of our funding comes from corporate sponsors.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team">
+
+    <!-- SPONSORS Section -->
+    <section id="sponsors">
         <div class="container">
-            <!-- Core Members -->
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Members</h2>
-                    <h3 class="section-subheading text-muted">Our Amazing Team</h3>
-                </div>
-            </div>
-            <div class="row">
-                {% for member in site.data.team %}
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            {% if member.img-name %}
-                                <div class="team-img-wrapper" data-lazy-load-image="img/team/{{ member.img-name }}.jpg"></div>
-                            {% else %}
-                                <div class="team-img-wrapper">
-                                    <img src="img/scotty-circle.svg" class="img-responsive img-circle" alt="member image" />
-                                </div>
-                            {% endif %}
-                            {% if member.website %}
-                                <h4><a href="{{ member.website }}">{{ member.name }}</a></h4>
-                            {% else %}
-                                <h4>{{ member.name }}</h4>
-                            {% endif %}
-                            <p class="text-muted">{{ member.bio }}</p>
+            <h2 class="section-heading">Sponsors</h2>
+            <div id="sponsorss" class="clearfix">
+                    <div id="sponsors-box">
+                      {% for tier in site.data.sponsors-tiered %}
+                        <h4>{{ tier.tier }}</h4>
+                        <div class="tier">
+                          {% for sponsor in tier.sponsors %}
+                              <a class="{{ tier.class }} link" href="{{ sponsor.url }}">
+                                <img class="company-logo" src="img/sponsors/{{ sponsor.image }}"></img>
+                              </a>
+                          {% endfor %}
                         </div>
+                      {% endfor %}
                     </div>
-                 {% endfor %}
             </div>
         </div>
     </section>
 
-    <!-- Calendar -->
-    <section id="calendar">
+
+    <!-- MISC SECTION 
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Calendar</h2>
+                    <h2 class="section-heading">Contact</h2>
                     <h3 class="section-subheading text-muted">When and where to find us.</h3>
                 </div>
             </div>
@@ -346,7 +354,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <div class="container">
@@ -363,7 +371,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <span class="copyright"> ScottyLabs | <a href="http://cmu.edu">Carnegie Mellon University</a> </span>
+                    <span class="copyright"> <a href="http://scottylabs.org" style="text-decoration:none;color:white">ScottyLabs | </a> <a href="http://cmu.edu" style="color:white">Carnegie Mellon University</a> </span>
                 </div>
             </div>
         </div>

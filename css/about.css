@@ -1,0 +1,51 @@
+.outer-th-video{
+    float:right;
+    margin:0 10px 5px 0;
+}
+
+.th-video{
+    /*margin: 0 auto;*/
+    width: 100%;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+
+.outer-th-video-para{
+    height: 400px;
+    width:60%;
+    position: relative;
+    border: 0px solid;
+}
+
+.th-video-para{
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.th-video-text{
+    line-height: 3;
+}
+
+@media only screen and (max-width: 480px) {
+    .outer-th-video{
+        float:none;
+        margin: 0 10px 5px 0;
+    }
+    .th-video-text{
+        line-height:1;
+    }
+    .th-video-para{
+        left:30%;
+        position:relative;
+        top:40%;
+    }
+    .th-video{
+        top:50%;
+        margin-left:0px;
+    }
+    
+}
