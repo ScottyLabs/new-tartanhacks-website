@@ -44,13 +44,18 @@
         margin: 0 10px 5px 0;
     }
     .th-video-text{
-        line-height:1;
+        line-height: 1.5;
     }
-    .th-video-para{
+    /* Remove when video is ready */
+    .th-video-para {
+      width: 80%;
+    }
+    /* Add back when video is ready */
+    /* .th-video-para{
         left:30%;
         position:relative;
         top:40%;
-    }
+    } */
     .th-video{
         top:50%;
         margin-left:0px;
