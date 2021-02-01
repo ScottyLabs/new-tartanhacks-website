@@ -14,6 +14,16 @@
   src: url("../fonts/Poppins-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Sabo";
+  src: url("../fonts/Sabo-Filled.otf");
+}
+
+@font-face {
+  font-family: "Comic";
+  src: url("../fonts/comic.ttf");
+}
+
 body {
     overflow-x: hidden;
     font-family: "Poppins", "Terminal Grotesque";
@@ -28,12 +38,18 @@ body {
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.75;
+    font-size: 1.5em;
+    line-height: 1;
 }
 
 p.large {
     font-size: 18px;
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 1.3em;
+  }
 }
 
 a,
@@ -218,7 +234,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: "Poppins";
+    font-family: "Terminal Grotesque";
     font-weight: 500;
     font-size: 1.4em;
     letter-spacing: 1px;
@@ -391,13 +407,14 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
-    font-family: "Terminal Grotesque";
+    font-family: "Sabo";
+    font-weight: 500;
 }
 
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
@@ -857,6 +874,7 @@ footer {
 }
 
 footer span.copyright {
+    color: #fff;
     text-transform: uppercase;
     text-transform: none;
     line-height: 40px;
