@@ -23,9 +23,6 @@
 }
 
 @media(max-width: 480px) {
-  #faq {
-    padding-top: 20px;
-  }
 
   #faq .row .section-heading {
     padding-top: 1em;

@@ -400,7 +400,7 @@ header .intro-text a {
 }
 
 section {
-    padding: 100px 0;
+    padding: 20px 0;
 }
 
 section h2.section-heading {
@@ -424,12 +424,6 @@ section#about {
 }
 section#about .text-muted {
     color: #fff;
-}
-
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
 }
 
 .service-heading {
