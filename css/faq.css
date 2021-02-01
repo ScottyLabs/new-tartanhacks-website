@@ -1,5 +1,5 @@
 .expandable{
-    background-color:#2EA0B1;
+    background-color:#2582F2;
     color:white;
     padding:16px;
     font-size: 20px;
@@ -11,7 +11,7 @@
 }
 
 .active, .expandable:hover{
-    background-color:#3f3f3f;
+    background-color:#5d5f61;
 }
 
 .text_answer{
@@ -20,5 +20,23 @@
     padding-top: 5px;
     overflow:hidden;
     display:none;
-    
+}
+
+@media(max-width: 480px) {
+  #faq {
+    padding-top: 20px;
+  }
+
+  #faq .row .section-heading {
+    padding-top: 1em;
+  }
+
+  .expandable {
+    font-size: 1.2em;
+  }
+
+  .text_answer p {
+    font-size: 1em;
+    line-height: 1.3;
+  }
 }
