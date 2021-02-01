@@ -21,12 +21,13 @@
 .awards-grid{
     width:100%;
     display:flex;
-    justify-content: flex-start;
+    justify-content: center; /*flex-start*/
     flex-wrap: wrap;
 }
 
 .awards-item-1{
     border-radius: 25px; /*25*/
+    width:450px; /**/
     background: #2582F2;
     color: #fff;
     padding: 50px; /*20 -- making it larger makes less elems per row*/
@@ -34,6 +35,12 @@
     margin-top:10px;
     box-shadow: 0px 0px 15px 0px #e4e4e4;
     transition: all 0.5s;
+    box-sizing: border-box; 
+
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:flex-start;
+    align-self:stretch;
     /*filter: alpha(opacity=60);*/
 }
 
