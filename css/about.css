@@ -13,15 +13,23 @@
 
 .outer-th-video-para{
     height: 400px;
-    width:60%;
+    /* Change width back once video is ready */
+    /* width: 60%; */
+    width: 100%;
     position: relative;
     border: 0px solid;
+    /* Remove flex properties once vid is ready */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .th-video-para{
     margin: 0;
     position: absolute;
     top: 25%;
+    /* Remove width property once video is ready */
+    width: 60%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }

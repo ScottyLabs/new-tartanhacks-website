@@ -27,7 +27,8 @@
 
 .awards-item-1{
     border-radius: 25px; /*25*/
-    background: #2EA0B1;
+    background: #2582F2;
+    color: #fff;
     padding: 50px; /*20 -- making it larger makes less elems per row*/
     margin-left: 45px; /*10*/
     margin-top:10px;
