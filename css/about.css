@@ -1,3 +1,7 @@
+#about {
+  padding-top: 10%;
+}
+
 .outer-th-video{
     float:right;
     margin:0 10px 5px 0;
@@ -32,13 +36,21 @@
     width: 60%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding-bottom: 20px;
 }
 
 .th-video-text{
     line-height: 2.5;
 }
 
+#about h2 {
+  padding-top: 1em;
+}
+
 @media only screen and (max-width: 480px) {
+    #about {
+      padding-top: 30%;
+    }
     .outer-th-video{
         float:none;
         margin: 0 10px 5px 0;
