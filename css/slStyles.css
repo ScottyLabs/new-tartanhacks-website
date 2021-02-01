@@ -383,21 +383,6 @@ header .intro-text a {
     }
 }
 
-@media(max-width: 400px){
-    header {
-      text-align: center;
-      color: #fff;
-      background-attachment: scroll;
-      background-image: url(../img/mobileHeader-bg.png);
-      background-position: center center;
-      background-repeat: none;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover;
-    }
-}
-
 section {
     padding: 100px 0;
 }
@@ -406,6 +391,7 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+    font-family: "Terminal Grotesque";
 }
 
 section h3.section-subheading {
