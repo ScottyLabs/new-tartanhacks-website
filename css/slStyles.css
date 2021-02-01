@@ -4,9 +4,19 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url("../fonts/terminal-grotesque.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
 body {
     overflow-x: hidden;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Poppins", "Terminal Grotesque";
 }
 
 .text-muted {
@@ -52,7 +62,6 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -71,7 +80,6 @@ h6 {
 .btn-primary {
     border-color: #2EA0B1;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
     background-color: #2EA0B1;
@@ -122,7 +130,6 @@ fieldset[disabled] .btn-primary.active {
     border-color: #2EA0B1;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -171,19 +178,24 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #A7A9AC;
+    font-family: "Terminal Grotesque";
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #2EA0B1;
+    padding: 0;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #2EA0B1;
+    color: #2582F2;
+}
+
+.navbar-default .active {
+  background-color: #A7A9AC;
 }
 
 .navbar-default .navbar-collapse {
@@ -191,8 +203,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #2EA0B1;
-    background-color: #2EA0B1;
+    border-color: #2582F2;
+    background-color: #2582F2;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -201,33 +213,46 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #2EA0B1;
+    background-color: #2582F2;
 }
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.4em;
     letter-spacing: 1px;
-    color: #fff;
+    color: #000;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #2EA0B1;
+    color: #fff;
 }
 
 .navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
+    border-radius: 3px;
     color: #fff;
-    background-color: #2EA0B1;
+    background-color: #2582F2;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #2EA0B1;
+    background-color: #2582F2;
+}
+
+.navbar-header .logo {
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media(max-width: 500px) {
+  .navbar-header .navbar-brand {
+    padding: 0.5em;
+  }
 }
 
 @media(min-width:768px) {
@@ -240,6 +265,10 @@ fieldset[disabled] .btn-xl.active {
         transition: padding .3s;
     }
 
+    .navbar-header .logo {
+      height: 50px;
+    }
+
     .navbar-default .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
@@ -248,12 +277,12 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
+        border-radius: 5px;
     }
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: rgba(102,102,102,1);
+        background-color: #A7A9AC;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -265,7 +294,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: fixed;
-    background-image: url(../img/header-bg.png);
+    background-color: #2582F2;
     min-height: 500px;
     height: 100vh;
     background-position: center center;
@@ -281,9 +310,17 @@ header .intro-text {
     padding-bottom: 200px;
 }
 
+header .intro-text #window {
+  height: 30vh;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
@@ -292,22 +329,47 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
 }
 
+header .intro-text .button {
+  background-color: #E6E7E8;
+  border: solid black 3px;
+  color: white;
+  padding: 12px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.5em;
+  font-weight: 500;
+  font-family: "Terminal Grotesque"
+}
+
+header .intro-text .button a {
+  color: black;
+}
+
+header .intro-text .button:hover {
+  background-color: #44E80F;
+}
+
+header .intro-text a {
+  text-decoration: none;
+}
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 400px;
+        padding-top: 250px;
         padding-bottom: 300px;
+    }
+
+    header .intro-text #window {
+      height: 40vh;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 60px;
         font-style: normal;
         font-weight: 400;
@@ -316,7 +378,6 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 25px;
         font-weight: 400;
     }
@@ -324,16 +385,16 @@ header .intro-text .intro-heading {
 
 @media(max-width: 400px){
     header {
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url(../img/mobileHeader-bg.png);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+      text-align: center;
+      color: #fff;
+      background-attachment: scroll;
+      background-image: url(../img/mobileHeader-bg.png);
+      background-position: center center;
+      background-repeat: none;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
     }
 }
 
@@ -812,7 +873,6 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
@@ -820,7 +880,6 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
