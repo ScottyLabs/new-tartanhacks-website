@@ -21,6 +21,9 @@
     - name: Facebook
       image: facebook.png
       url: https://www.facebook.com/
+    - name: Hudson River Trading
+      image: hrt.png
+      url: https://www.hudsonrivertrading.com/
   # - name: BNY Mellon
   #   image: bny_mellon.jpg
   #   url: https://www.bnymellon.com/
@@ -50,9 +53,6 @@
   - name: Wayfair
     image: wayfair.jpg
     url: https://www.wayfair.com/
-  - name: Hudson River Trading
-    image: hrt.png
-    url: https://www.hudsonrivertrading.com/
 
 # - tier: Partners
 #   class: kind

@@ -22,6 +22,10 @@
     display:none;
 }
 
+.text_answer p {
+  line-height: 1.5;
+}
+
 @media(max-width: 480px) {
 
   #faq .row .section-heading {
