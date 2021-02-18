@@ -18,9 +18,9 @@
     - name: Sandia National Laboratories
       image: sandia.png
       url: https://www.sandia.gov/
-  # - name: Facebook
-  #   image: facebook.png
-  #   url: https://www.facebook.com/
+    - name: Facebook
+      image: facebook.png
+      url: https://www.facebook.com/
   # - name: BNY Mellon
   #   image: bny_mellon.jpg
   #   url: https://www.bnymellon.com/
