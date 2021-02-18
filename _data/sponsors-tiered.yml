@@ -1,10 +1,3 @@
-# - tier: Diamond
-#   class: diamond
-#   sponsors:
-#   - name: Emirates
-#     image: emirates.jpg
-#     url: https://www.emirates.com/us/english/
-
 - tier: Gold
   class: gold
   sponsors:
@@ -24,60 +17,43 @@
     - name: Hudson River Trading
       image: hrt.png
       url: https://www.hudsonrivertrading.com/
-  # - name: BNY Mellon
-  #   image: bny_mellon.jpg
-  #   url: https://www.bnymellon.com/
     
-
 - tier: Bronze
   class: bronze
+  sponsors:
+  - name: Wayfair
+    image: wayfair.jpg
+    url: https://www.wayfair.com/
+  - name: Blockstack
+    image: blockstack.png
+    url: https://www.stacks.co/
+  - name: UltraPress
+    image: ultra_press.png
+    url: https://ultrapress.com/
+
+- tier: Custom
+  class: custom
   sponsors:
   - name: Capital One
     image: capital_one.png
     url: https://campus.capitalone.com/
-  # - name: Rockwell Automation
-  #   image: rockwell_automation.png
-  #   url: https://www.rockwellautomation.com/en_NA/overview.page
-  # - name: DICK's Sporting Goods
-  #   image: dicks_sporting_goods.png
-  #   url: https://www.dickssportinggoods.com/
-  # - name: Panopto
-  #   image: panopto.jpg
-  #   url: https://www.panopto.com/
-  # - name: Ness Digital Engineering
-  #   image: ness_digital_engineering.jpg
-  #   url: https://www.ness.com/
-  # - name: Nefeli Networks
-  #   image: nefeli_networks.png
-  #   url: https://www.nefeli.io/
-  - name: Wayfair
-    image: wayfair.jpg
-    url: https://www.wayfair.com/
 
-# - tier: Partners
-#   class: kind
-#   sponsors:
-#   - name: Bloomberg
-#     image: bloomberg.png
-#     url: https://www.bloomberg.com/
-#   - name: String && Loop
-#     image: string_and_loop.png
-#     url: https://www.stringandloop.com/
-#   - name: Sketch
-#     image: sketch.png
-#     url: https://www.sketch.com/
-#   - name: Wolfram
-#     image: wolfram.png
-#     url: https://www.wolfram.com/
-#   - name: Mixmax
-#     image: mixmax.jpg
-#     url: https://mixmax.com/
-#   - name: UltraPress
-#     image: ultra_press.png
-#     url: https://ultrapress.com/
-#   - name: Repl.it
-#     image: repl_it.png
-#     url: https://repl.it/
-  #- name: Ritual Energy
-  #  image: ritual_energy.png
-  #  url: https://www.ritualenergy.com/
+- tier: Partners
+  class: kind
+  sponsors:
+  - name: Google
+    image: google.png
+    url: https://www.google.com/
+  - name: Wolfram
+    image: wolfram.png
+    url: https://www.wolfram.com/
+  - name: Repl.it
+    image: repl_it.png
+    url: https://repl.it/
+  - name: EchoAR
+    image: echoAR.webp
+    url: https://www.echoar.xyz/
+  - name: SEED SPOT
+    image: seedspot.png
+    url: https://seedspot.org/
+  
