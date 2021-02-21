@@ -1,3 +1,13 @@
+- tier: Special
+  class: special
+  sponsors:
+  - name: MLH
+    image: mlh.png
+    url: https://mlh.io/
+  - name: StickerMule
+    image: sticker-mule.png
+    url: http://hackp.ac/mlh-stickermule-hackathons
+
 - tier: Gold
   class: gold
   sponsors:
