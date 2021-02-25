@@ -13,6 +13,7 @@ section#sponsors {
   margin-right: auto;
   padding-bottom: 10vh;
   margin-top: -10px;
+  min-height: min-intrinsic /*new*/
 }
 
 #sponsors-box h2 {
@@ -50,6 +51,7 @@ section#sponsors {
   max-width: 90%;
   margin: auto;
   margin-top: 10px;
+  align-items: center; /*new*/
 }
 
 .link {
@@ -88,6 +90,7 @@ section#sponsors {
   padding: 8px;
   border-radius: 8px;
   background-color: white;
+  align-items: center; /*new*/
   max-width: 10vw;
 }
 
