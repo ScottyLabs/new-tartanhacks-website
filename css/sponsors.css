@@ -7,7 +7,7 @@ section#sponsors {
   /* background-color: #FFFFFF; */
   /*background-color:blue;*/
   position: relative;
-  max-width: 75vw;
+  max-width: 90vw;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
@@ -26,7 +26,7 @@ section#sponsors {
 
 @media (max-width: 1024px) {
   #sponsors-box {
-    max-width: 68vw;
+    max-width: 90vw;
   }
 }
 
@@ -34,7 +34,7 @@ section#sponsors {
   #sponsors-box {
     padding-left: 8vw;
     padding-right: 8vw;
-    max-width: 80vw;
+    max-width: 90vw;
   }
 }
 
@@ -78,8 +78,6 @@ section#sponsors {
   display: -ms-flexbox;
   -webkit-box-flex: 1;
   display: flex;
-  flex: 1 1 0;
-  margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 5px;
@@ -98,24 +96,38 @@ section#sponsors {
   opacity: 0.7;
 }
 
-.special {
-  max-width: 20%;
+.diamond .company-logo,
+.gold .company-logo {
+  max-width: 15vw;
 }
 
-.diamond,
-.gold {
-  max-width: 40%;
+.silver .company-logo {
+  max-width: 10vw;
 }
 
-.silver {
-  max-width: 30%;
+.bronze .company-logo {
+  max-width: 8vw;
 }
 
-.bronze,
-.custom {
-  max-width: 20%;
+.kind .company-logo {
+  max-width: 6vw;
 }
 
-.kind {
-  max-width: 5%;
+@media (max-width: 1024px) {
+  .diamond .company-logo,
+  .gold .company-logo {
+    max-width: 50vw;
+  }
+
+  .silver .company-logo {
+    max-width: 40vw;
+  }
+
+  .bronze .company-logo {
+    max-width: 30vw;
+  }
+
+  .kind .company-logo {
+    max-width: 20vw;
+  }
 }
