@@ -1,0 +1,31 @@
+#schedule-container {
+  display: grid;
+  grid-template-columns: 33fr 33fr 33fr;
+  text-align: center;
+}
+
+.event h4 {
+  font-size: 1.3em;
+}
+
+.event p {
+  text-align: left;
+  font-size: 1em;
+}
+
+.event a {
+  color: #2582F2;
+}
+
+@media (max-width: 1024px) {
+  #schedule-container {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+  }
+}
+
+#schedule-container .event {
+  background-color: white;
+  margin: 0.5em;
+  padding: 10px;
+}

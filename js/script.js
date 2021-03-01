@@ -40,3 +40,44 @@ $(".expandable").on("click", function() {
   console.log($(this));
   $(this).next().slideToggle(200);
 });
+
+axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
+  for (let event of response.data) {
+    console.log(event);
+    const date = new Date(event.timestamp * 1000);
+    const luxDate = luxon.DateTime.fromJSDate(date);
+    const dateString = luxDate.toFormat("MMM dd, yyyy hh:mm a")
+
+    const container = $("<div>");
+    container.addClass("event");
+
+    const title = $("<h4>");
+    title.text(event.name);
+    container.append(title);
+
+    const dateLabel = $("<h6>");
+    dateLabel.text(dateString);
+    container.append(dateLabel);
+
+
+    let location = "Location: In Person";
+    let locationLabel = $("<h6>");
+    locationLabel.text(location);
+    // Add url to zoom if virtual
+    if (!event.is_in_person) {
+      const url = $("<a>");
+      url.attr("href", event.zoom_link);
+      url.text("Remote");
+      location = "Location: ";
+      locationLabel.text(location);
+      locationLabel.append(url);
+    }
+    container.append(locationLabel);
+    
+    const text = $("<p>");
+    text.text(event.description);
+    container.append(text);
+
+    $("#schedule-container").append(container);
+  }
+})
