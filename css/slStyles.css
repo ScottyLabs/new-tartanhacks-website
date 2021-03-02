@@ -850,6 +850,11 @@ section#faq {
     background-repeat: no-repeat;
     background-color: #212A36;
 }
+section#speaker{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #212A36;
+}
 /*section#register{
     background-color:#1c4727;
 }*/
@@ -864,7 +869,19 @@ section#faq a {
     color: #fff;
 }
 
+section#speaker .section-heading,
+section#speaker p,
+section#speaker a {
+    color: #fff;
+}
+
 section#faq a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #2EA0B1;
+}
+section#speaker a:hover,
 a:focus,
 a:active,
 a.active {
