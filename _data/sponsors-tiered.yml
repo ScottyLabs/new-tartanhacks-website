@@ -24,9 +24,9 @@
   - name: Wayfair
     image: wayfair.jpg
     url: https://www.wayfair.com/
-  - name: Blockstack
-    image: blockstack.png
-    url: https://www.stacks.co/
+  #- name: Blockstack
+   # image: blockstack.png
+   # url: https://www.stacks.co/
   - name: UltraPress
     image: ultra_press.png
     url: https://ultrapress.com/
@@ -68,4 +68,10 @@
   - name: SEED SPOT
     image: seedspot.png
     url: https://seedspot.org/
+  - name: Oracle
+    image: oracle.png
+    url: https://www.oracle.com/index.html
+  - name: Sketch
+    image: sketch.png
+    url: sketch.com
   
