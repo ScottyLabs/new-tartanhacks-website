@@ -42,11 +42,20 @@ $(".expandable").on("click", function() {
 });
 
 axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
+  const platforms = ["Error", "Zoom", "Hopin", "Discord", "In Person"];
   for (let event of response.data) {
-    console.log(event);
-    const date = new Date(event.timestamp * 1000);
-    const luxDate = luxon.DateTime.fromJSDate(date);
-    const dateString = luxDate.toFormat("MMM dd, yyyy hh:mm a")
+    if (event.access_code === 0) {
+      continue;
+    }
+    const timestamp = parseInt(event.timestamp);
+    let startDate = new Date(timestamp * 1000);
+    const luxStart = luxon.DateTime.fromJSDate(startDate);
+    startDate = luxStart.toFormat("MMM dd, yyyy hh:mm a")
+
+    const duration = event.duration;
+    let endDate = new Date((timestamp + duration) * 1000);
+    const luxEnd = luxon.DateTime.fromJSDate(endDate);
+    endDate = luxEnd.toFormat("MMM dd, yyyy hh:mm a");
 
     const container = $("<div>");
     container.addClass("event");
@@ -56,9 +65,8 @@ axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
     container.append(title);
 
     const dateLabel = $("<h6>");
-    dateLabel.text(dateString);
+    dateLabel.text(startDate + " - " + endDate);
     container.append(dateLabel);
-
 
     let location = "Location: In Person";
     let locationLabel = $("<h6>");
@@ -66,8 +74,9 @@ axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
     // Add url to zoom if virtual
     if (!event.is_in_person) {
       const url = $("<a>");
+      url.attr("target", "_blank");
       url.attr("href", event.zoom_link);
-      url.text("Remote");
+      url.text(platforms[event.access_code]);
       location = "Location: ";
       locationLabel.text(location);
       locationLabel.append(url);

@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.event {
+  border-radius: 5px;
+
+}
+
 .event h4 {
   font-size: 1.3em;
 }
@@ -11,6 +16,11 @@
 .event p {
   text-align: left;
   font-size: 1em;
+  overflow-y: auto;
+  line-height: 1.5;
+  max-height: 15vh;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .event a {
