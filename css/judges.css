@@ -1,0 +1,28 @@
+.judges-center{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100px;
+    border-radius: 50%;
+  
+  }
+  
+  .judges-container{
+      padding: 0 18px;
+      padding-top: 5px;
+      overflow:hidden;
+      
+  }
+
+  .judges-info{
+    padding: 0 18px;
+    padding-top: 5px;
+    overflow:hidden;
+    text-align:center;
+  }
+
+  .judges-info p {
+    line-height: 1.5;
+    color:black;
+  }
+  
