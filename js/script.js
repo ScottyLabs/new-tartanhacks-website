@@ -65,7 +65,11 @@ axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
     container.append(title);
 
     const dateLabel = $("<h6>");
-    dateLabel.text(startDate + " - " + endDate);
+    let dateString = startDate;
+    if (duration != 0) {
+      dateString = startDate + " - " + endDate;
+    }
+    dateLabel.text(dateString);
     container.append(dateLabel);
 
     let location = "Location: In Person";
