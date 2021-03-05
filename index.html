@@ -1,582 +1,879 @@
 ---
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TartanHacks 2021</title>
 
     <!-- Facebook Open Graph - Tells Facebook what to show when our webpage is shared. -->
     <meta property="og:url" content="https://tartanhacks.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="TartanHacks" />
-    <meta property="og:description" content="Carnegie Mellon University's largest hackathon, hosted by ScottyLabs. Come hack, build, make or create your own project." />
-    <meta property="og:image" content="https://tartanhacks.com/img/social-media-banner.jpg" />
+    <meta
+      property="og:description"
+      content="Carnegie Mellon University's largest hackathon, hosted by ScottyLabs. Come hack, build, make or create your own project."
+    />
+    <meta
+      property="og:image"
+      content="https://tartanhacks.com/img/social-media-banner.jpg"
+    />
 
-    <meta name="description" content="Carnegie Mellon University's largest hackathon, hosted by ScottyLabs. Come hack, build, make or create your own project.">
-    <meta name="keywords" content="CMU,hackathon,hack,ScottyLabs,technology,Carnegie Mellon,hackcmu,tartanhacks,scotty,pittsburgh,steelhacks,upitt">
+    <meta
+      name="description"
+      content="Carnegie Mellon University's largest hackathon, hosted by ScottyLabs. Come hack, build, make or create your own project."
+    />
+    <meta
+      name="keywords"
+      content="CMU,hackathon,hack,ScottyLabs,technology,Carnegie Mellon,hackcmu,tartanhacks,scotty,pittsburgh,steelhacks,upitt"
+    />
 
-    <link rel="icon" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png" />
     <link rel="canonical" href="https://tartanhacks.com/" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
     <!-- NES CSS for 8-bit retro theme -->
     <!-- <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" /> -->
 
     <!-- My CSS -->
-    <link href="css/slStyles.css" rel="stylesheet">
-    <link href="css/faq.css" rel="stylesheet">
-    <link href="css/awards.css" rel="stylesheet">
-    <link href="css/sponsors.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
-    <link href="css/schedule.css" rel="stylesheet">
-    <link href="css/speakers.css" rel="stylesheet">
-    <link href="css/judges.css" rel="stylesheet">
-    <link href="css/checkin.css" rel="stylesheet">
+    <link href="css/slStyles.css" rel="stylesheet" />
+    <link href="css/faq.css" rel="stylesheet" />
+    <link href="css/awards.css" rel="stylesheet" />
+    <link href="css/sponsors.css" rel="stylesheet" />
+    <link href="css/about.css" rel="stylesheet" />
+    <link href="css/schedule.css" rel="stylesheet" />
+    <link href="css/speakers.css" rel="stylesheet" />
+    <link href="css/judges.css" rel="stylesheet" />
+    <link href="css/checkin.css" rel="stylesheet" />
 
     <!-- ScottyLabs Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Kaushan+Script|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Kaushan+Script|Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Schema.org JSON-LD tags, describes the organization to web crawlers -->
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Event",
-      "description": "Carnegie Mellon University's largest hackathon, hosted by ScottyLabs. Come hack, build, make or create your own project. Sponsored by Emirates, Microsoft, BNY Mellon, and Facebook.",
-      "foundingDate": "2011",
-      "event": {
+      {
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "description": "Carnegie Mellon University's largest hackathon, hosted by ScottyLabs. Come hack, build, make or create your own project. Sponsored by Emirates, Microsoft, BNY Mellon, and Facebook.",
+        "foundingDate": "2011",
+        "event": {
           "@type": "Event",
           "sameAs": "https://tartanhacks.com"
-      },
-      "image": "https://tartanhacks.com/img/social-media-banner.png",
-      "logo": "https://tartanhacks.com/img/social-media-banner.png",
-      "name": "TartanHacks",
-      "alternateName": "Scotty Labs",
-      "organizer": {
-        "@type": "Organization",
-        "sameAs": "https://scottylabs.org"
-      },
-      "sameAs": "https://www.facebook.com/ScottyLabs/",
-      "url": "https://scottylabs.org"
-    }
+        },
+        "image": "https://tartanhacks.com/img/social-media-banner.png",
+        "logo": "https://tartanhacks.com/img/social-media-banner.png",
+        "name": "TartanHacks",
+        "alternateName": "Scotty Labs",
+        "organizer": {
+          "@type": "Organization",
+          "sameAs": "https://scottylabs.org"
+        },
+        "sameAs": "https://www.facebook.com/ScottyLabs/",
+        "url": "https://scottylabs.org"
+      }
     </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+  </head>
 
-</head>
-
-<body id="page-top" class="index">
-  <!-- MLH Trust Badge -->
-  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+  <body id="page-top" class="index">
+    <!-- MLH Trust Badge -->
+    <a
+      id="mlh-trust-badge"
+      style="
+        display: block;
+        max-width: 100px;
+        min-width: 60px;
+        position: fixed;
+        right: 50px;
+        top: 0;
+        width: 10%;
+        z-index: 10000;
+      "
+      href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
+      target="_blank"
+      ><img
+        src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
+        alt="Major League Hacking 2021 Hackathon Season"
+        style="width: 100%"
+    /></a>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img class="logo" src="img/logo.png"></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden"><a href="#page-top"></a></li>
-                    <!-- Make Home be the main page-->
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#prizes">Prizes</a></li>
-                    <li><a class="page-scroll" href="#speaker">Speakers</a></li>
-                    <li><a class="page-scroll" href="#judges">Judges</a></li>
-                    <li><a class="page-scroll" href="#schedule">Schedule</a></li>
-                    <li><a class="page-scroll" href="#faq">FAQ</a></li>
-                    <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
-                    <li><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a></li>
-                    <!--<li><a class="page-scroll" href="#contact">Contact</a></li>-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top"
+            ><img class="logo" src="img/logo.png"
+          /></a>
         </div>
-        <!-- /.container-fluid -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden"><a href="#page-top"></a></li>
+            <!-- Make Home be the main page-->
+            <li><a class="page-scroll" href="#about">About</a></li>
+            <li><a class="page-scroll" href="#prizes">Prizes</a></li>
+            <li><a class="page-scroll" href="#speaker">Speakers</a></li>
+            <li><a class="page-scroll" href="#judges">Judges</a></li>
+            <li><a class="page-scroll" href="#schedule">Schedule</a></li>
+            <li><a class="page-scroll" href="#faq">FAQ</a></li>
+            <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
+            <li>
+              <a
+                href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                target="_blank"
+                >Code of Conduct</a
+              >
+            </li>
+            <!--<li><a class="page-scroll" href="#contact">Contact</a></li>-->
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
     </nav>
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="intro-text">
-                <img src="img/center_logo.png" id="window">
-                <div class="intro-lead-in">
-                  <span class="nes-btn button">
-                    <a href="https://dashboard.tartanhacks.com/" target="_blank">
-                      Start Game
-                    </a>
-                  </span>
-                  <div id="download-dashboard">
-                    <a href="https://apps.apple.com/us/app/scottylabs-dashboard/id1556362423">
-                      <img class="app-icon" src="img/ios.png">
-                    </a>
-                    <a href="raw/tartanhacks-dashboard.apk">
-                      <img class="app-icon" src="img/android.png">
-                    </a>
-                  </div>
-                </div>
+      <div class="container">
+        <div class="intro-text">
+          <img src="img/center_logo.png" id="window" />
+          <div class="intro-lead-in">
+            <span class="nes-btn button">
+              <a href="https://dashboard.tartanhacks.com/" target="_blank">
+                Start Game
+              </a>
+            </span>
+            <div id="download-dashboard">
+              <a
+                href="https://apps.apple.com/us/app/scottylabs-dashboard/id1556362423"
+              >
+                <img class="app-icon" src="img/ios.png" />
+              </a>
+              <a href="raw/tartanhacks-dashboard.apk">
+                <img class="app-icon" src="img/android.png" />
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </header>
-
 
     <!-- ABOUT Section -->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- <div class="outer-th-video"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <div class="outer-th-video"> 
                             <iframe class="th-video" width="420" height="345" src="https://www.youtube.com/embed/PQYfXmqJdIA"></iframe>
                      </div> -->
-                    
-                     <div class="outer-th-video-para">
-                        <div class="th-video-para">
-                            <h2 class="th-video-text section-heading" style="color:white">ABOUT</h2>
-                            <p class="th-video-text">
-                                    Tartanhacks is the largest hackathon at CMU! Organized by 
-                                    <a href="https://scottylabs.org/" style="text-decoration:none;color:white" target="_blank">ScottyLabs</a>, 
-                                    it's a hackathon where, in 36 hours, participants from all over the country work in groups to create innovative projects.
-                                    This year, Tartanhacks will be held online, so come on over to hack, learn new concepts through our virtual
-                                    workshops, and meet other hackers!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+            <div class="outer-th-video-para">
+              <div class="th-video-para">
+                <h2 class="th-video-text section-heading" style="color: white">
+                  ABOUT
+                </h2>
+                <p class="th-video-text">
+                  Tartanhacks is the largest hackathon at CMU! Organized by
+                  <a
+                    href="https://scottylabs.org/"
+                    style="text-decoration: none; color: white"
+                    target="_blank"
+                    >ScottyLabs</a
+                  >, it's a hackathon where, in 36 hours, participants from all
+                  over the country work in groups to create innovative projects.
+                  This year, Tartanhacks will be held online, so come on over to
+                  hack, learn new concepts through our virtual workshops, and
+                  meet other hackers!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- PRIZES Section-->
     <section id="prizes">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-offset-3 col-sm-6  text-center">
-                    <h2 class="section-heading">Prizes</h2>
-                    <h3 class="section-subheading text-muted">Here are some of the prizes we'll be offering!</h3>
-                </div>
-            </div>
-        
-
-            <div class="awards-container">
-                <div class="awards-grid">
-                    <div class="awards-item-1">
-                        <br>
-                        <h3 style="text-align:center;">Scott Krulcik Grand Prize</h3>
-                        <br>
-                        <p style="text-align:center;">Receive $2000 in cash, Oracle credits, and tickets to Pinnacle 2021!</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">Microsoft Azure Champ Prize: Hack for Good</h3>
-                        <p style="text-align:center;">Recieve $1,000 USD to be donated to an approved charity of your choice, XBox Game Pass Ultimate,
-                        and LinkedIn Learning membership!</p>
-                        <!--<img src="img/sponsors/microsoft.png"></img>-->
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">EchoAR Prize</h3>
-                        <p style="text-align:center;">Win a 3 month business plan, Amazon gift card, and be featured on EchoAR Inspiration page!</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">MLH Prizes</h3>
-                        <p style="text-align:center;">*Best Domain Registered with Domain.com <br> *Best Hardware Hack Sponsored by Digi-Key <br> *Best use of DataStax Astra</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">Digital Ocean <br>Prize</h3>
-                        <br>
-                        <p style="text-align:center;">Win $2000 credits, stickers, and T-shirts!</p>
-                    </div>
-
-                   
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">Best Use of Google Cloud Prize</h3>
-                        <br>
-                        <p style="text-align:center;">Win special recognition prizes and Google Cloud prize bundles!</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">HRT Prize: Best Use of a Public Dataset</h3>
-                        <p style="text-align:center;">Recieve HRT branded beats headphones!</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">Capital One Prize: Best Financial Hack</h3>
-                        <p style="text-align:center;">Win Amazon gift cards and other cool gifts!</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">Sandia Prize: Best Safe and Healthy Life-Style Hack</h3>
-                        <br>
-                        <p style="text-align:center;">Win wireless earbuds!</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">Design for America Award</h3>
-                        <p style="text-align:center;">Receive up to $1000 from the Title IX Fund to sponsor their project and a chance to compete in Impact CMU’s Showcase</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">Facebook Prize</h3>
-                        <br>
-                        <p style="text-align:center;">Win a prize from Facebook!</p>
-                    </div>
-
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;">Wolfram Prize</h3>
-                        <p style="text-align:center;">Gain access to a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro.
-                        </p>
-                    </div>
-                
-                    <div class="awards-item-1">
-                        <h3 style="text-align:center;"><strong>First Penguin Award</strong></h3>
-                        <p style="text-align:center;">Take the courageous first leap!</p>
-                    </div>
-
-                    <!--<div class="awards-item-1">
-                        <h3 style="text-align:center;">More coming soon</h3>
-                        <p style="text-align:center;">Stay tuned for even <em>more</em> prizes!</p>
-                    </div>-->
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-3 col-sm-6 text-center">
+            <h2 class="section-heading">Prizes</h2>
+            <h3 class="section-subheading text-muted">
+              Here are some of the prizes we'll be offering!
+            </h3>
+          </div>
         </div>
+
+        <div class="awards-container">
+          <div class="awards-grid">
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/logo.png" />
+              <h3 style="text-align: center">Scott Krulcik Grand Prize</h3>
+              <br />
+              <p style="text-align: center">
+                Receive $2000 in cash, Oracle credits, and tickets to Pinnacle
+                2021!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/logo.png" />
+              <h3 style="text-align: center">Design for America Award*</h3>
+              <br />
+              <p style="text-align: center">
+                Receive $1000 in funds to support your project and a chance to
+                participate in Impact CMU showcase.
+              </p>
+              <br />
+              <p style="text-align: center">
+                <em>* Only Carnegie Mellon University teams are eligible</em>
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/logo.png" />
+              <h3 style="text-align: center">Best Throwback Hack</h3>
+              <br />
+              <p style="text-align: center">
+                Receive Sketch licenses for each member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/microsoft.png" />
+              <h3 style="text-align: center">
+                Azure Champ Prize: Hack for Good
+              </h3>
+              <p style="text-align: center">
+                Recieve $1,000 to be donated to an approved charity of your
+                choice, Xbox Game Pass Ultimate, and LinkedIn Learning
+                membership!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/hrt.png" />
+              <h3 style="text-align: center">Best Use of a Public Dataset</h3>
+              <br />
+              <p style="text-align: center">
+                Win HRT branded Beats Headphones per team member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/sandia.png" />
+              <h3 style="text-align: center">
+                Best Safe and Healthy Lifestyle Hack
+              </h3>
+              <br />
+              <p style="text-align: center">Win 4 wireless earbuds per team!</p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/facebook.png" />
+              <h3 style="text-align: center">Best Community Hack</h3>
+              <br />
+              <p style="text-align: center">
+                Win a Portal Mini device per team member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/wayfair.jpg" />
+              <h3 style="text-align: center">
+                Best Hack to Solve an Inequality Crisis
+              </h3>
+              <br />
+              <p style="text-align: center">
+                Win a $100 Wayfair digital gift card per team member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/capital_one.png" />
+              <h3 style="text-align: center">Best Financial Hack</h3>
+              <br />
+              <p style="text-align: center">
+                Win a $200 Amazon gift card per team member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/mlh.png" />
+              <h3 style="text-align: center">
+                Best Domain Registered with Domain.com
+              </h3>
+              <br />
+              <p style="text-align: center">
+                Win a PowerSquare Qi Wireless Phone Charger and Domain.com
+                backpack per team member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/mlh.png" />
+              <h3 style="text-align: center">
+                Best Hardware Hack Sponsored by Digi-Key
+              </h3>
+              <br />
+              <p style="text-align: center">
+                Win a Grove Beginner Kit per team member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/mlh.png" />
+              <h3 style="text-align: center">Best Use of DataStax Astra</h3>
+              <br />
+              <p style="text-align: center">Win Blue Snowball Microphones!</p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/mlh.png" />
+              <h3 style="text-align: center">Best Use of Google Cloud</h3>
+              <br />
+              <p style="text-align: center">
+                Win a Google branded Parkland Academy backpack!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/google.png" />
+              <h3 style="text-align: center">Best Use of Google Cloud</h3>
+              <br />
+              <p style="text-align: center">
+                Win a Google Cloud branded backpack and Google Cloud goodie bags
+                per team member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/oracle.png" />
+              <h3 style="text-align: center">Most Futuristic Hack</h3>
+              <br />
+              <p style="text-align: center">
+                Win a Holy Stone drone with HD camera per team member!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/sponsors/echoAR.webp" />
+              <h3 style="text-align: center">AR/VR Hack</h3>
+              <br />
+              <p style="text-align: center">
+                Receive a 3 Month Business Plan and a $50 Amazon gift card for
+                the team!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/logo.png" />
+              <h3 style="text-align: center">The Spiciest Meme Award</h3>
+              <br />
+              <p style="text-align: center">
+                Win "What do you Meme?" card game!
+              </p>
+            </div>
+
+            <div class="awards-item-1">
+              <img class="awards-icon" src="img/logo.png" />
+              <h3 style="text-align: center">First Penguin Award</h3>
+              <br />
+              <p style="text-align: center">Win super cute penguin plushies!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--SPEAKER Section-->
-    <section id="speaker"> 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-heading text-center" style="color:white">SPEAKERS</h2>
-                    <h3 class="section-heading text-center" style="color:white">Meet our speakers!</h3>
-                    <br>
-                    
-                    <div class="speaker-container">
-                        <img class="speaker-center" src="img/speakers/amy.jpg"></img>
-                    </div>
-                    <div class="speaker-info">
-                        <p><strong>AMY QUISPE</strong></p>
-                        <p style="color:white"> <b>Amy</b> is an engineer at 
-                          the US Digital Service and attended Carnegie Mellon’s 
-                          School of Computer Science, where she founded 
-                          ScottyLabs and TartanHacks.</p>
-                    </div>
-                    <div class="speaker-container">
-                        <img class="speaker-center" src="img/speakers/GuillermoRuiz.JPG"></img>
-                    </div>
-                    <div class="speaker-info">
-                        <p><strong>GUILLERMO RUIZ</strong></p>
-                        <p style="color:white"> <b>Guillermo</b> is the Head 
-                          of DevRel and responsible for crafting a vision for 
-                          Oracle Developers at a global scale and is the former 
-                          co-founder of Datadope.io
-                            </p>
-                    </div>
-                    <div class="speaker-container">
-                        <img class="speaker-center2" src="img/speakers/nitakaushal.jpg"></img>
-                    </div>
-                    <div class="speaker-info">
-                        <p><strong>NITA SINGH KAUSHAL</strong></p>
-                        <p style="color:white"> <b>Nita</b> is the Founder 
-                          of Miss CEO, a Lecturer in the School of Engineering
-                           at Stanford University, and an Instructor at 
-                           Stanford Continuing Studies.
-                            </p>
-                    </div>
-                </div>
+    <section id="speaker">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading text-center" style="color: white">
+              SPEAKERS
+            </h2>
+            <h3 class="section-heading text-center" style="color: white">
+              Meet our speakers!
+            </h3>
+            <br />
+
+            <div class="speaker-container">
+              <img class="speaker-center" src="img/speakers/amy.jpg" />
             </div>
+            <div class="speaker-info">
+              <p><strong>AMY QUISPE</strong></p>
+              <p style="color: white">
+                <b>Amy</b> is an engineer at the US Digital Service and attended
+                Carnegie Mellon’s School of Computer Science, where she founded
+                ScottyLabs and TartanHacks.
+              </p>
+            </div>
+            <div class="speaker-container">
+              <img
+                class="speaker-center"
+                src="img/speakers/GuillermoRuiz.JPG"
+              />
+            </div>
+            <div class="speaker-info">
+              <p><strong>GUILLERMO RUIZ</strong></p>
+              <p style="color: white">
+                <b>Guillermo</b> is the Head of DevRel and responsible for
+                crafting a vision for Oracle Developers at a global scale and is
+                the former co-founder of Datadope.io
+              </p>
+            </div>
+            <div class="speaker-container">
+              <img class="speaker-center2" src="img/speakers/nitakaushal.jpg" />
+            </div>
+            <div class="speaker-info">
+              <p><strong>NITA SINGH KAUSHAL</strong></p>
+              <p style="color: white">
+                <b>Nita</b> is the Founder of Miss CEO, a Lecturer in the School
+                of Engineering at Stanford University, and an Instructor at
+                Stanford Continuing Studies.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- JUDGES Section -->
     <section id="judges" class="bg-white">
-        <div class="row">
-            <div class="col-sm-offset-3 col-sm-6 text-center">
-                <h2 class="section-heading">Judges</h2>
-            </div>
+      <div class="row">
+        <div class="col-sm-offset-3 col-sm-6 text-center">
+          <h2 class="section-heading">Judges</h2>
         </div>
-        <div id="judges-parent">
-            <div class="judges-container">
-              <img class="judges-center" src="img/judges/jasmine.jpg"></img>
-              <div class="judges-info">
-                <p><a href="https://www.jasminelawrence.com/about"><strong>JASMINE LAWRENCE</strong></a></p>
-                <p>Product Manager<br/>Everyday Robot project @ X</p>
-              </div>
-            </div>
-            <div class="judges-container">
-                <img class="judges-center" src="img/judges/tom.jpg"></img>
-                <div class="judges-info">
-                  <p><a href="https://www.cs.cmu.edu/~tcortina/"><strong>TOM CORTINA</strong></a></p>
-                  <p>Assistant Dean for Undergraduate Education<br/>School of Computer Science</p>
-                </div>
-            </div>
-            <div class="judges-container">
-                <img class="judges-center" src="img/judges/pat.jpg"></img>
-                <div class="judges-info">
-                  <p><a href="https://www.cs.cmu.edu/~pvirtue/"><strong>PAT VIRTUE</strong></a></p>
-                  <p>Assistant Teaching Professor<br/>School of Computer Science</p>
-                </div>
-            </div>
-            <div class="judges-container">
-                <img class="judges-center" src="img/judges/kelly.jpeg"></img>
-                <div class="judges-info">
-                  <p><a href="http://www.krivers.net/"><strong>KELLY RIVERS</strong></a></p>
-                  <p>Assistant Teaching Professor<br/>School of Computer Science</p>
-                </div>
-            </div>
+      </div>
+      <div id="judges-parent">
+        <div class="judges-container">
+          <img class="judges-center" src="img/judges/jasmine.jpg" />
+          <div class="judges-info">
+            <p>
+              <a href="https://www.jasminelawrence.com/about"
+                ><strong>JASMINE LAWRENCE</strong></a
+              >
+            </p>
+            <p>Product Manager<br />Everyday Robot project @ X</p>
+          </div>
         </div>
+        <div class="judges-container">
+          <img class="judges-center" src="img/judges/tom.jpg" />
+          <div class="judges-info">
+            <p>
+              <a href="https://www.cs.cmu.edu/~tcortina/"
+                ><strong>TOM CORTINA</strong></a
+              >
+            </p>
+            <p>
+              Assistant Dean for Undergraduate Education<br />School of Computer
+              Science
+            </p>
+          </div>
+        </div>
+        <div class="judges-container">
+          <img class="judges-center" src="img/judges/pat.jpg" />
+          <div class="judges-info">
+            <p>
+              <a href="https://www.cs.cmu.edu/~pvirtue/"
+                ><strong>PAT VIRTUE</strong></a
+              >
+            </p>
+            <p>Assistant Teaching Professor<br />School of Computer Science</p>
+          </div>
+        </div>
+        <div class="judges-container">
+          <img class="judges-center" src="img/judges/kelly.jpeg" />
+          <div class="judges-info">
+            <p>
+              <a href="http://www.krivers.net/"
+                ><strong>KELLY RIVERS</strong></a
+              >
+            </p>
+            <p>Assistant Teaching Professor<br />School of Computer Science</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    
     <!-- SCHEDULE Section -->
     <section id="schedule" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-offset-3 col-sm-6 text-center">
-                    <h2 class="section-heading">Schedule</h2>
-                </div>
-            </div>
-            <div class="row">
-              <div id="schedule-container"></div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-3 col-sm-6 text-center">
+            <h2 class="section-heading">Schedule</h2>
+          </div>
         </div>
+        <div class="row">
+          <div id="schedule-container"></div>
+        </div>
+      </div>
     </section>
-
 
     <!-- Check-in Items Section -->
     <section id="checkin" class="bg-darkest-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-offset-3 col-sm-6 text-center">
-                    <h2 class="section-heading">Check-in Items</h2>
-                </div>
-            </div>
-            <div class="row">
-              <p id="checkin-text">
-                Make sure to tick off these check-in items
-                over the course of the weekend. Players on the top of the
-                leaderboard will receive a special prize at the end of the 
-                hackathon 👀
-              </p>
-            </div>
-            <div class="row">
-              <div id="checkin-container"></div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-3 col-sm-6 text-center">
+            <h2 class="section-heading">Check-in Items</h2>
+          </div>
         </div>
+        <div class="row">
+          <p id="checkin-text">
+            Make sure to tick off these check-in items over the course of the
+            weekend. Players on the top of the leaderboard will receive a
+            special prize at the end of the hackathon 👀
+          </p>
+        </div>
+        <div class="row">
+          <div id="checkin-container"></div>
+        </div>
+      </div>
     </section>
-
 
     <!-- FAQ Section -->
     <section id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-heading text-center">FAQ</h2>
-                    <br>
-                    <button type="button" class="expandable">How much does it cost to participate in TartanHacks?</button>
-                    <div class="text_answer">
-                        <p>Nothing. TartanHacks is free for all undergraduate students!</p>
-                    </div>
-                    <button type="button" class="expandable">I'm not a CS major, can I still join?</button>
-                    <div class="text_answer">
-                        <p>Yes! All undergradauate majors and programs, even if they aren't technical, are welcome 
-                            at TartanHacks. We have slides from a series of web development workshops online that 
-                            you can use to brush up your skills! We'll also have some workshops during the event so you 
-                            can get started with new frameworks.</p>
-                    </div>
-                    <button type="button" class="expandable">Is TartanHacks open to first-year students? </button>
-                    <div class="text_answer">
-                        <p>Yes! We welcome students of all skill levels to participate. First-year students and 
-                            first-time hackers have always been part of TartanHacks; we would love to see you at the 
-                            event! Some prizes will also be specific for beginner hackers.
-                            </p>
-                    </div>
-                    <button type="button" class="expandable">I'm a graduate student. Can I still participate? </button>
-                    <div class="text_answer">
-                        <p>Unfortunately, graduate students cannot participate. TartanHacks is currently limited to 
-                            undergraduate students only.
-                            </p>
-                    </div>
-                    <button type="button" class="expandable">Are non-CMU students allowed to attend?</button>
-                    <div class="text_answer">
-                        <p>Yes! Anyone with an educational email address can sign up on the 
-                            registration system.
-                            </p>
-                    </div>
-                    <button type="button" class="expandable">Can I register with a team?</button>
-                    <div class="text_answer">
-                        <p>You have to sign up as an individual for the event, and we'll have you specify your team 
-                            later on. Don't worry, if you already have a team chosen you'll still be able to work with 
-                            them during event.
-                            </p>
-                    </div>
-                    <button type="button" class="expandable">If I don't have a team before the event, can I still participate?</button>
-                    <div class="text_answer">
-                        <p>
-                                Absolutely! We'll have a team mixer after the opening ceremony to help you meet new hackers.
-                        </p>
-                    </div>
-                    <button type="button" class="expandable">How many people can we have per team?</button>
-                    <div class="text_answer">
-                        <p>
-                                Up to 4 people are allowed.
-                        </p>
-                    </div>
-                    <button type="button" class="expandable">I'm confused about my registration status. How does the 
-                        registration process work?</button>
-                    <div class="text_answer">
-                        <p>There are 3 states you can be in. <br>
-                            1. <strong>Submitted.</strong> You have submitted your application, but we haven't accepted you yet. 
-                            Don't worry though; we are doing acceptances in waves, i.e. one wave each day, up until 
-                            early Friday morning. <br>
-                            2. <strong>Admitted.</strong> We have accepted your TartanHacks application! The final step is to 
-                                click 'Confirm Your Spot' and fill out the form. <br>
-                            3. <strong>Confirmed.</strong> All you need to do is show up on Friday at 6PM for check in! Your 
-                            spot in TartanHacks is confirmed.
-                        </p>
-                    </div>
-                    <button type="button" class="expandable">Does everyone who registers get to participate at TartanHacks?</button>
-                    <div class="text_answer">
-                        <p>
-                                We expect that everyone who registers can get in. However, sometimes more hackers sign up than we can admit. Once registration closes, hackers are accepted on a rolling basis. You will be notified via email about your registration status.
-                        </p>
-                    </div>
-                    <button type="button" class="expandable">I got in, but a few of my team members were put on the waitlist. Will they be able to participate?
-                        </button>
-                    <div class="text_answer">
-                        <p>
-                                Hackers are accepted individually, so we are unable to guarantee that all members of your team will get in. However, if they're on the waitlist, there's still hope! See the next question.
-                        </p>
-                    </div>
-                    <button type="button" class="expandable">Is there a way to get off of the waitlist?</button>
-                    <div class="text_answer">
-                        <p>
-                                We will be letting hackers off the waitlist on a first-come, first-serve basis on the day of the event. Historically, many people have gotten off the waitlist.
-                        </p>
-                    </div>
-                    <button type="button" class="expandable">Are we limited to software projects or are hardware hacks allowed?</button>
-                    <div class="text_answer">
-                        <p>
-                                Hardware hacks are certainly allowed! We don't restrict projects to software, though you will need to bring your own hardware/materials.
-                        </p>
-                    </div>
-                    <button type="button" class="expandable">What if I need help during the hackathon?</button>
-                    <div class="text_answer">
-                        <p>
-                                We will have a team of student and corporate mentors on hand who are experts in many common technologies. They'll be able to answer your questions, help you debug, and get you set up with new frameworks. They can't make your project for you, but they are always there to help!
-                        </p>
-                    </div>
-                    <button type="button" class="expandable">Who runs TartanHacks?</button>
-                    <div class="text_answer">
-                        <p>
-                                TartanHacks is run by <a href="https://scottylabs.org/" style="text-decoration:none" target="_blank">ScottyLabs</a>, a student organization at Carnegie Mellon University that develops apps for CMU and runs educational events, like TartanHacks. ScottyLabs isn't affiliated with any academic department, and all of our funding comes from corporate sponsors.
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading text-center">FAQ</h2>
+            <br />
+            <button type="button" class="expandable">
+              How much does it cost to participate in TartanHacks?
+            </button>
+            <div class="text_answer">
+              <p>
+                Nothing. TartanHacks is free for all undergraduate students!
+              </p>
             </div>
+            <button type="button" class="expandable">
+              I'm not a CS major, can I still join?
+            </button>
+            <div class="text_answer">
+              <p>
+                Yes! All undergradauate majors and programs, even if they aren't
+                technical, are welcome at TartanHacks. We have slides from a
+                series of web development workshops online that you can use to
+                brush up your skills! We'll also have some workshops during the
+                event so you can get started with new frameworks.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              Is TartanHacks open to first-year students?
+            </button>
+            <div class="text_answer">
+              <p>
+                Yes! We welcome students of all skill levels to participate.
+                First-year students and first-time hackers have always been part
+                of TartanHacks; we would love to see you at the event! Some
+                prizes will also be specific for beginner hackers.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              I'm a graduate student. Can I still participate?
+            </button>
+            <div class="text_answer">
+              <p>
+                Unfortunately, graduate students cannot participate. TartanHacks
+                is currently limited to undergraduate students only.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              Are non-CMU students allowed to attend?
+            </button>
+            <div class="text_answer">
+              <p>
+                Yes! Anyone with an educational email address can sign up on the
+                registration system.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              Can I register with a team?
+            </button>
+            <div class="text_answer">
+              <p>
+                You have to sign up as an individual for the event, and we'll
+                have you specify your team later on. Don't worry, if you already
+                have a team chosen you'll still be able to work with them during
+                event.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              If I don't have a team before the event, can I still participate?
+            </button>
+            <div class="text_answer">
+              <p>
+                Absolutely! We'll have a team mixer after the opening ceremony
+                to help you meet new hackers.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              How many people can we have per team?
+            </button>
+            <div class="text_answer">
+              <p>Up to 4 people are allowed.</p>
+            </div>
+            <button type="button" class="expandable">
+              I'm confused about my registration status. How does the
+              registration process work?
+            </button>
+            <div class="text_answer">
+              <p>
+                There are 3 states you can be in. <br />
+                1. <strong>Submitted.</strong> You have submitted your
+                application, but we haven't accepted you yet. Don't worry
+                though; we are doing acceptances in waves, i.e. one wave each
+                day, up until early Friday morning. <br />
+                2. <strong>Admitted.</strong> We have accepted your TartanHacks
+                application! The final step is to click 'Confirm Your Spot' and
+                fill out the form. <br />
+                3. <strong>Confirmed.</strong> All you need to do is show up on
+                Friday at 6PM for check in! Your spot in TartanHacks is
+                confirmed.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              Does everyone who registers get to participate at TartanHacks?
+            </button>
+            <div class="text_answer">
+              <p>
+                We expect that everyone who registers can get in. However,
+                sometimes more hackers sign up than we can admit. Once
+                registration closes, hackers are accepted on a rolling basis.
+                You will be notified via email about your registration status.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              I got in, but a few of my team members were put on the waitlist.
+              Will they be able to participate?
+            </button>
+            <div class="text_answer">
+              <p>
+                Hackers are accepted individually, so we are unable to guarantee
+                that all members of your team will get in. However, if they're
+                on the waitlist, there's still hope! See the next question.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              Is there a way to get off of the waitlist?
+            </button>
+            <div class="text_answer">
+              <p>
+                We will be letting hackers off the waitlist on a first-come,
+                first-serve basis on the day of the event. Historically, many
+                people have gotten off the waitlist.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              Are we limited to software projects or are hardware hacks allowed?
+            </button>
+            <div class="text_answer">
+              <p>
+                Hardware hacks are certainly allowed! We don't restrict projects
+                to software, though you will need to bring your own
+                hardware/materials.
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              What if I need help during the hackathon?
+            </button>
+            <div class="text_answer">
+              <p>
+                We will have a team of student and corporate mentors on hand who
+                are experts in many common technologies. They'll be able to
+                answer your questions, help you debug, and get you set up with
+                new frameworks. They can't make your project for you, but they
+                are always there to help!
+              </p>
+            </div>
+            <button type="button" class="expandable">
+              Who runs TartanHacks?
+            </button>
+            <div class="text_answer">
+              <p>
+                TartanHacks is run by
+                <a
+                  href="https://scottylabs.org/"
+                  style="text-decoration: none"
+                  target="_blank"
+                  >ScottyLabs</a
+                >, a student organization at Carnegie Mellon University that
+                develops apps for CMU and runs educational events, like
+                TartanHacks. ScottyLabs isn't affiliated with any academic
+                department, and all of our funding comes from corporate
+                sponsors.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- SPONSORS Section -->
     <section id="sponsors">
-        <div class="container">
-            <h2 class="section-heading">Sponsors</h2>
-            <div id="sponsorss" class="clearfix">
-                    <div id="sponsors-box">
-                      {% for tier in site.data.sponsors-tiered %}
-                        {% if tier.tier != "Special" %}
-                          <h4>{{ tier.tier }}</h4>
-                        {% endif %}
-                        <div class="tier">
-                          {% for sponsor in tier.sponsors %}
-                              <a class="{{ tier.class }} link" href="{{ sponsor.url }}">
-                                <img class="company-logo" src="img/sponsors/{{ sponsor.image }}"></img>
-                              </a>
-                          {% endfor %}
-                        </div>
-                      {% endfor %}
-                    </div>
+      <div class="container">
+        <h2 class="section-heading">Sponsors</h2>
+        <div id="sponsorss" class="clearfix">
+          <div id="sponsors-box">
+            {% for tier in site.data.sponsors-tiered %} {% if tier.tier !=
+            "Special" %}
+            <h4>{{ tier.tier }}</h4>
+            {% endif %}
+            <div class="tier">
+              {% for sponsor in tier.sponsors %}
+              <a class="{{ tier.class }} link" href="{{ sponsor.url }}">
+                <img
+                  class="company-logo"
+                  src="img/sponsors/{{ sponsor.image }}"
+                />
+              </a>
+              {% endfor %}
             </div>
+            {% endfor %}
+          </div>
         </div>
+      </div>
     </section>
 
-
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Follow us on: </span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="mailto:tartanhacks@scottylabs.org"><i class="fa fa-envelope"></i></a>
-                        </li>
-                        <li><a href="http://www.facebook.com/ScottyLabs" target="_blank"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://instagram.com/cmu.scottylabs" target="_blank"><i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li><a href="https://twitter.com/scottylabs" target="_blank"><i class="fa fa-twitter"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <span class="copyright"> <a href="http://scottylabs.org" style="text-decoration:none;color:white">ScottyLabs | </a> <a href="http://cmu.edu" style="color:white">Carnegie Mellon University</a> </span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Follow us on: </span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li>
+                <a href="mailto:tartanhacks@scottylabs.org"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://www.facebook.com/ScottyLabs" target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/cmu.scottylabs" target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/scottylabs" target="_blank"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <span class="copyright">
+              <a
+                href="http://scottylabs.org"
+                style="text-decoration: none; color: white"
+                >ScottyLabs |
+              </a>
+              <a href="http://cmu.edu" style="color: white"
+                >Carnegie Mellon University</a
+              >
+            </span>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Plugin JavaScript -->
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" 
-      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" 
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.26.0/luxon.min.js"></script>
     <script src="js/script.js"></script>
 
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54783750-2', 'auto');ga('send', 'pageview');
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-54783750-2", "auto");
+      ga("send", "pageview");
     </script>
-</body>
-
+  </body>
 </html>
