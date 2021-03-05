@@ -45,9 +45,6 @@ $(".expandable").on("click", function() {
 axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
   const platforms = ["Other", "Zoom", "Hopin", "Discord", "Other"];
   for (let event of response.data) {
-    if (event.access_code === 0) {
-      continue;
-    }
     const timestamp = parseInt(event.timestamp);
     let startDate = new Date(timestamp * 1000);
     const luxStart = luxon.DateTime.fromJSDate(startDate);
