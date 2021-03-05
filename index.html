@@ -41,6 +41,7 @@
     <link href="css/schedule.css" rel="stylesheet">
     <link href="css/speakers.css" rel="stylesheet">
     <link href="css/judges.css" rel="stylesheet">
+    <link href="css/checkin.css" rel="stylesheet">
 
     <!-- ScottyLabs Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -105,8 +106,8 @@
                     <li><a class="page-scroll" href="#about">About</a></li>
                     <li><a class="page-scroll" href="#prizes">Prizes</a></li>
                     <li><a class="page-scroll" href="#speaker">Speakers</a></li>
-                    <li><a class="page-scroll" href="#schedule">Schedule</a></li>
                     <li><a class="page-scroll" href="#judges">Judges</a></li>
+                    <li><a class="page-scroll" href="#schedule">Schedule</a></li>
                     <li><a class="page-scroll" href="#faq">FAQ</a></li>
                     <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
                     <li><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a></li>
@@ -289,7 +290,7 @@
                     <div class="speaker-info">
                         <p><strong>GUILLERMO RUIZ</strong></p>
                         <p style="color:white"> <b>Guillermo</b> is the Head of DevRel and responsible for crafting a vision for Oracle Developers at global scale. In addition, his team runs the Advocacy programs, supporting evangelists, committers, students, and open source projects. They work with bloggers, influencers and communities to transform the way you learn technology.
-                            Guillermo is the former co-founder of <a href="Datadope.io" style="color:#2582F2">Datadope.io</a> and has been in the Cloud space since 2011. He is a technical Writer, Conference Speaker, and co-host of the ‘Beards & Beers’ show.
+                            Guillermo is the former co-founder of <a href="http://datadope.io/" style="color:#2582F2">Datadope.io</a> and has been in the Cloud space since 2011. He is a technical Writer, Conference Speaker, and co-host of the ‘Beards & Beers’ show.
                             Feel free to reach out to him! His inbox is open to chat and discuss about almost any topic.
                             </p>
                     </div>
@@ -319,36 +320,36 @@
 
     <!-- JUDGES Section -->
     <section id="judges" class="bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-offset-3 col-sm-6 text-center">
-                    <h2 class="section-heading">Judges</h2>
-                </div>
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-6 text-center">
+                <h2 class="section-heading">Judges</h2>
             </div>
+        </div>
+        <div id="judges-parent">
             <div class="judges-container">
               <img class="judges-center" src="img/judges/jasmine.jpg"></img>
-              <div class="speaker-info">
+              <div class="judges-info">
                 <p><strong>JASMINE LAWRENCE</strong></p>
                 <p>product manager at everyday robotics</p>
               </div>
             </div>
             <div class="judges-container">
                 <img class="judges-center" src="img/judges/tom.jpg"></img>
-                <div class="speaker-info">
+                <div class="judges-info">
                   <p><strong>TOM CORTINA</strong></p>
                   <p>assistant dean for undergraduate education, school of computer science</p>
                 </div>
             </div>
             <div class="judges-container">
                 <img class="judges-center" src="img/judges/pat.jpg"></img>
-                <div class="speaker-info">
+                <div class="judges-info">
                   <p><strong>PAT VIRTUE</strong></p>
                   <p>assistant teaching professor, school of computer science</p>
                 </div>
             </div>
             <div class="judges-container">
                 <img class="judges-center" src="img/judges/kelly.jpeg"></img>
-                <div class="speaker-info">
+                <div class="judges-info">
                   <p><strong>KELLY RIVERS</strong></p>
                   <p>assistant teaching professor, school of computer science</p>
                 </div>
@@ -367,6 +368,29 @@
             </div>
             <div class="row">
               <div id="schedule-container"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Check-in Items Section -->
+    <section id="checkin" class="bg-darkest-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6 text-center">
+                    <h2 class="section-heading">Check-in Items</h2>
+                </div>
+            </div>
+            <div class="row">
+              <p id="checkin-text">
+                Make sure to tick off these check-in items
+                over the course of the weekend. Players on the top of the
+                leaderboard will receive a special prize at the end of the 
+                hackathon 👀
+              </p>
+            </div>
+            <div class="row">
+              <div id="checkin-container"></div>
             </div>
         </div>
     </section>

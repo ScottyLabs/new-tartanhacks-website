@@ -41,6 +41,7 @@ $(".expandable").on("click", function() {
   $(this).next().slideToggle(200);
 });
 
+// Load schedule
 axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
   const platforms = ["Error", "Zoom", "Hopin", "Discord", "In Person"];
   for (let event of response.data) {
@@ -65,7 +66,11 @@ axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
     container.append(title);
 
     const dateLabel = $("<h6>");
-    dateLabel.text(startDate + " - " + endDate);
+    let dateString = startDate;
+    if (duration != 0) {
+      dateString = startDate + " - " + endDate;
+    }
+    dateLabel.text(dateString);
     container.append(dateLabel);
 
     let location = "Location: In Person";
@@ -89,4 +94,33 @@ axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
 
     $("#schedule-container").append(container);
   }
-})
+});
+
+// Load checkin items
+axios.post("https://thd-api.herokuapp.com/checkin/get").then((response) => {
+  for (let checkin of response.data) {
+    console.log(checkin);
+    const timestamp = parseInt(checkin.date);
+    const date = new Date(timestamp * 1000);
+    const luxDate = luxon.DateTime.fromJSDate(date);
+    const dateStr = luxDate.toFormat("MMM dd, yyyy hh:mm a")
+
+    const container = $("<div>");
+    container.addClass("checkin-item");
+
+    const title = $("<h4>");
+    title.text(checkin.name);
+    container.append(title);
+
+    const dateLabel = $("<h6>");
+    dateLabel.text(dateStr);
+    container.append(dateLabel);
+
+    const points = checkin.points;
+    const text = $("<p>");
+    text.text(`${points} points`);
+    container.append(text);
+
+    $("#checkin-container").append(container);
+  }
+});

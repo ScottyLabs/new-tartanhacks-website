@@ -1,0 +1,50 @@
+#checkin .section-heading {
+  color: white;
+}
+
+#checkin-container {
+  display: grid;
+  grid-template-columns: 33fr 33fr 33fr;
+  text-align: center;
+}
+
+.checkin-item {
+  border-radius: 5px;
+
+}
+
+.checkin-item h4 {
+  font-size: 1.3em;
+}
+
+.checkin-item p {
+  color: #2582F2;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+  max-height: 15vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#checkin-text {
+  color: white;
+  line-height: 1.3;
+}
+
+.checkin-item a {
+  color: #2582F2;
+}
+
+@media (max-width: 1024px) {
+  #checkin-container {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+  }
+}
+
+#checkin-container .checkin-item {
+  background-color: white;
+  margin: 0.5em;
+  padding: 10px;
+}
