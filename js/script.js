@@ -43,7 +43,7 @@ $(".expandable").on("click", function() {
 
 // Load schedule
 axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
-  const platforms = ["Error", "Zoom", "Hopin", "Discord", "Other"];
+  const platforms = ["Other", "Zoom", "Hopin", "Discord", "Other"];
   for (let event of response.data) {
     if (event.access_code === 0) {
       continue;
