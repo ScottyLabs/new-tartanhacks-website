@@ -43,7 +43,7 @@ $(".expandable").on("click", function() {
 
 // Load schedule
 axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
-  const platforms = ["Error", "Zoom", "Hopin", "Discord", "In Person"];
+  const platforms = ["Error", "Zoom", "Hopin", "Discord", "Other"];
   for (let event of response.data) {
     if (event.access_code === 0) {
       continue;
@@ -99,7 +99,6 @@ axios.post("https://thd-api.herokuapp.com/events/get").then((response) => {
 // Load checkin items
 axios.post("https://thd-api.herokuapp.com/checkin/get").then((response) => {
   for (let checkin of response.data) {
-    console.log(checkin);
     const timestamp = parseInt(checkin.date);
     const date = new Date(timestamp * 1000);
     const luxDate = luxon.DateTime.fromJSDate(date);
