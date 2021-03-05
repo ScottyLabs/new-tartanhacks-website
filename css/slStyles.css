@@ -1036,3 +1036,15 @@ body {
 /*.go-left{
     margin: -200px;
 }*/
+
+.app-icon {
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: solid black  1px;
+  padding: 3px;
+}
+
+.app-icon:hover {
+  background-color: #44E80F;
+}

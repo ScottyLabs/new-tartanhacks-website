@@ -1,37 +1,42 @@
-.speaker-center{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-  
-  }
+.speaker-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 
-  .speaker-center2{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 55%;
-  
-  }
-  
-  .speaker-container{
-      padding: 0 18px;
-      padding-top: 5px;
-      overflow:hidden;
-      
-  }
+.speaker-center2 {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 55%;
+}
 
-  .speaker-info{
-    padding: 0 18px;
-    padding-top: 5px;
-    overflow:hidden;
-    text-align:center;
-  }
+.speaker-container {
+  padding: 0 18px;
+  padding-top: 5px;
+  overflow: hidden;
+}
 
+.speaker-info {
+  padding: 0 18px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.speaker-info p {
+  line-height: 1.5;
+  color: black;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1024px) {
   .speaker-info p {
-    line-height: 1.5;
-    color:black;
+    max-width: 90%;
   }
-  
+}
