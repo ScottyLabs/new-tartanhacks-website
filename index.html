@@ -91,6 +91,25 @@
       }
     </script>
 
+    <script>
+      var pathname = window.location.pathname;
+
+      function notAFile(pathname) {
+        for (var i = pathname.length - 1; i >= 0; i--) {
+          if (pathname[i] === "/") {
+            break;
+          } else if (pathname[i] === ".") {
+            return false;
+          }
+        }
+        return true;
+      }
+      if (!pathname.endsWith("/") && notAFile(pathname)) {
+        window.history.pushState(null, null, `${window.location.href}/`);
+        window.location.reload();
+      }
+    </script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
